@@ -94,6 +94,7 @@ private:
   edm::InputTag PFMuonTag_; 
   edm::InputTag PFTauTag_;
   edm::InputTag PFJetTag_;  
+  edm::InputTag PFJetAK8Tag_;  
   edm::InputTag PFMETTag_;
   //
   edm::InputTag puJetIdTag_;
@@ -255,7 +256,7 @@ private:
   double  mCaloAK4JetPzCor[MAXJET]; 
   double  mCaloAK4TrackPt[MAXJET];	
   double  mCaloAK4JetBtagTkCountHighEff[MAXJET]; 
-  double  mCaloAK4JetBTagSimpleSecVtx[MAXJET];
+  double  mCaloAK4JetBTagCSVv2[MAXJET];
   double  mCaloAK4JetBTagCombSecVtx[MAXJET]; 
   int     mCaloAK4JetIDLOOSE[MAXJET]; 
   int     mCaloAK4JetIDTIGHT[MAXJET];
@@ -273,6 +274,21 @@ private:
   double  mGenAK4JetEmEnergy[MAXJET];
   double  mGenAK4JetHadEnergy[MAXJET];		
   //int     mNGenAK4Jets; 
+  
+
+  ///------------------------------------------------
+  /// Gen AK8 Jets (for Calo)
+  ///------------------------------------------------
+  double  mGenAK8JetE[MAXJET];
+  double  mGenAK8JetPt[MAXJET];
+  double  mGenAK8JetPx[MAXJET];
+  double  mGenAK8JetPy[MAXJET];
+  double  mGenAK8JetPz[MAXJET];
+  double  mGenAK8JetEta[MAXJET];
+  double  mGenAK8JetPhi[MAXJET];
+  double  mGenAK8JetEmEnergy[MAXJET];
+  double  mGenAK8JetHadEnergy[MAXJET];		
+  //int     mNGenAK8Jets; 
   
   ///------------------------------------------------
   /// PF AK4Jets
@@ -304,7 +320,7 @@ private:
   double  mPFAK4JetBtagTkCountHighPur[MAXJET];
   double  mPFAK4JetBtagJetProbability[MAXJET];
   double  mPFAK4JetBtagJetBProbability[MAXJET];
-  double  mPFAK4JetBTagSimpleSecVtx[MAXJET];
+  double  mPFAK4JetBTagCSVv2[MAXJET];
   double  mPFAK4JetBTagCombSecVtx[MAXJET];
   double  mPFAK4JetBTagCombSecVtxMVA[MAXJET];
   //
@@ -343,6 +359,76 @@ private:
   int     mPFAK4JetNumOfHFEM[MAXJET];
   //
   double  mPFAK4uncer[MAXJET];
+
+  ///------------------------------------------------
+  /// PF AK8Jets
+  ///------------------------------------------------
+  int     mNPFAK8Jets;
+  int     mPFAK8JetN90[MAXJET];
+  int     mPFAK8JetNtrkPF[MAXJET];
+  int     mPFAK8JetNtrkVtx[MAXJET];
+  double  mPFAK8JetE[MAXJET];
+  double  mPFAK8JetPt[MAXJET];
+  double  mPFAK8JetPx[MAXJET];
+  double  mPFAK8JetPy[MAXJET];
+  double  mPFAK8JetPz[MAXJET];
+  double  mPFAK8JetEta[MAXJET];
+  double  mPFAK8JetPhi[MAXJET];
+  double  mPFAK8JetfHPD[MAXJET];
+  double  mPFAK8JetfRBX[MAXJET];
+  double  mPFAK8JetN90Hits[MAXJET];
+  double  mPFAK8JetSigEta[MAXJET];
+  double  mPFAK8JetSigPhi[MAXJET];
+  double  mPFAK8JetIDEmf[MAXJET];
+  double  mPFAK8JetECor[MAXJET];
+  double  mPFAK8JetPtCor[MAXJET];
+  double  mPFAK8JetPxCor[MAXJET];
+  double  mPFAK8JetPyCor[MAXJET];
+  double  mPFAK8JetPzCor[MAXJET];
+  //
+  double  mPFAK8JetBtagTkCountHighEff[MAXJET];
+  double  mPFAK8JetBtagTkCountHighPur[MAXJET];
+  double  mPFAK8JetBtagJetProbability[MAXJET];
+  double  mPFAK8JetBtagJetBProbability[MAXJET];
+  double  mPFAK8JetBTagCSVv2[MAXJET];
+  double  mPFAK8JetBTagCombSecVtx[MAXJET];
+  double  mPFAK8JetBTagCombSecVtxMVA[MAXJET];
+  //
+  int     mPFAK8JetFlavour[MAXJET]; // algorithmic jet flavour definition
+  int     mPFAK8JetGenPartonFlavour[MAXJET]; // flavour of the parton matched to jet (0 if no match)   
+  //
+  double  mPFAK8JetNeuEmEngFrac[MAXJET];
+  double  mPFAK8JetChaEmEngFrac[MAXJET];
+  double  mPFAK8JetChaHadEngFrac[MAXJET];
+  double  mPFAK8JetNeuHadEngFrac[MAXJET];
+  //
+  double  mPFAK8JetChaEmEng[MAXJET];
+  double  mPFAK8JetNeuEmEng[MAXJET];
+  double  mPFAK8JetChaHadEng[MAXJET];
+  double  mPFAK8JetNeuHadEng[MAXJET];
+  double  mPFAK8JetPhotEng[MAXJET];
+  double  mPFAK8JetElecEng[MAXJET];
+  double  mPFAK8JetMuonEng[MAXJET];
+  double  mPFAK8JetHFHadEng[MAXJET];
+  double  mPFAK8JetHFEmEng[MAXJET];		
+  double  mPFAK8JetChaMuEng[MAXJET];
+  //
+  int     mPFAK8JetNumOfChaMu[MAXJET];
+  int     mPFAK8JetNumOfMuon[MAXJET];
+  int     mPFAK8JetNumOfPhot[MAXJET];
+  int     mPFAK8JetNumOfElec[MAXJET];		
+  int     mPFAK8JetNumOfNeu[MAXJET];
+  int     mPFAK8JetNumOfCha[MAXJET];
+  int     mPFAK8JetNumOfNeuHad[MAXJET];
+  int     mPFAK8JetNumOfChaHad[MAXJET];
+  int     mPFAK8JetNumOfDaughters[MAXJET];
+  int     mPFAK8JetIDLOOSE[MAXJET];
+  int     mPFAK8JetIDTIGHT[MAXJET];
+  double     mPFAK8JetPUFullJetId[MAXJET];
+  int     mPFAK8JetNumOfHFHad[MAXJET];
+  int     mPFAK8JetNumOfHFEM[MAXJET];
+  //
+  double  mPFAK8uncer[MAXJET];
   
   ///------------------------------------------------
   /// Gen AK4 Jets (for PF)
@@ -361,6 +447,24 @@ private:
   double  mPFAK4JERCentral[MAXJET];
   double  mPFAK4JERUp[MAXJET];
   double  mPFAK4JERDown[MAXJET];
+  
+  ///------------------------------------------------
+  /// Gen AK8 Jets (for PF)
+  ///------------------------------------------------
+  double  mGenPFAK8JetE[MAXJET];
+  double  mGenPFAK8JetPt[MAXJET];
+  double  mGenPFAK8JetPx[MAXJET];
+  double  mGenPFAK8JetPy[MAXJET];
+  double  mGenPFAK8JetPz[MAXJET];
+  double  mGenPFAK8JetEta[MAXJET];
+  double  mGenPFAK8JetPhi[MAXJET];
+  double  mGenPFAK8JetEmEnergy[MAXJET];
+  double  mGenPFAK8JetHadEnergy[MAXJET];
+  //int     mNGenPFAK8Jets; 
+  //
+  double  mPFAK8JERCentral[MAXJET];
+  double  mPFAK8JERUp[MAXJET];
+  double  mPFAK8JERDown[MAXJET];
   
   ///------------------------------------------------
   /// MET
@@ -905,6 +1009,7 @@ NtupleAnalyzer::NtupleAnalyzer(const edm::ParameterSet& iConfig):
   PFMuonTag_             = iConfig.getUntrackedParameter<edm::InputTag>("PFMuonTag");
   PFTauTag_              = iConfig.getUntrackedParameter<edm::InputTag>("PFTauTag");
   PFJetTag_              = iConfig.getUntrackedParameter<edm::InputTag>("PFJetTag");
+  PFJetAK8Tag_           = iConfig.getUntrackedParameter<edm::InputTag>("PFJetAK8Tag");
   PFMETTag_              = iConfig.getUntrackedParameter<edm::InputTag>("PFMETTag");
   
   // non PF collection 
@@ -1201,75 +1306,6 @@ void NtupleAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
   
   
   ///-------------------------------------------------------------------------- 
-  /// Shuichi's correction Method for PFMET Phi
-  ///--------------------------------------------------------------------------
-  /*
-  //calo towers
-  Handle<CaloTowerCollection> calo_h;
-  iEvent.getByLabel("towerMaker", calo_h);
-  const CaloTowerCollection *towers = calo_h.failedToGet () ? 0 :&*calo_h;
-  
-  //if (towers) { // object is available 
-  
-  reco::Particle::Point  vertex_=reco::Jet::Point(-0.4,0.5,0); 
-  
-  // double sum_et = 0.0;
-  // double sum_ex = 0.0;
-  // double sum_ey = 0.0;
-  // double sum_ez = 0.0;
-  double dEx=0.0;
-  double dEy=0.0;
-  
-  int cti=0;
-  
-  for (CaloTowerCollection::const_iterator kal=towers->begin(); kal!=towers->end(); kal++){	
-  // double eta   = kal->eta();
-  double phi   = kal->phi();
-  double theta = kal->theta();
-  double e     = kal->energy();
-  double et    = e*sin(theta);
-  
-  // double etEM    = (kal->emEnergy())*sin(theta);
-  // double etHad   = (kal->hadEnergy())*sin(theta);
-  
-  math::PtEtaPhiMLorentzVector ct(kal->p4(vertex_));
-  if(et>0.3){
-  // sum_ez += e*cos(theta);
-  // sum_et += et;
-  // sum_ex += et*cos(phi);
-  // sum_ey += et*sin(phi);
-  
-  // sum_ex += ct.px();
-  // sum_ey += ct.py();
-  
-  dEx=dEx+(ct.px()-et*cos(phi));
-  dEy=dEy+(ct.py()-et*sin(phi));
-  
-  }
-  cti++;
-  }   // loop over calo towers.
-  
-  //    double metPt=sqrt(sum_ex*sum_ex+sum_ey*sum_ey);
-  //    double metPhi=atan2(-sum_ey,-sum_ex);
-  
-  // correct pfMET
-  //double ptx=(pfmet->pt())*cos(pfmet->phi()) - dEx;
-  //double pty=(pfmet->pt())*sin(pfmet->phi()) - dEy;
-  
-  //double newPfMetPt=sqrt(ptx*ptx+pty*pty);
-  //double phi=atan2(pty,ptx);
-  
-  //histo1D["newPfMetPhi"]->Fill(phi);
-  //histo1D["newPfMetPt"]->Fill(newPfMetPt);
-  
-  mCaloTowerdEx = dEx;
-  mCaloTowerdEy = dEy;
-  
-  //}
-  */
-
-  
-  ///-------------------------------------------------------------------------- 
   /// PileUP Summury
   ///--------------------------------------------------------------------------
   if(isMCTag){
@@ -1337,101 +1373,6 @@ void NtupleAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
   /*
   edm::Handle<reco::TrackCollection> trkHandle;
   iEvent.getByLabel("generalTracks",trkHandle);
-  */
-  
-  ///-------------------------------------------------------------------------- 
-  /// AK4CaloJet
-  ///--------------------------------------------------------------------------
-  /*
-  edm::Handle<edm::View<pat::Jet> > JetHand;
-  iEvent.getByLabel(JetTag_,JetHand);
-  int jeti=0;
-  if(includeNonPFCollection && JetHand.isValid()){
-    for(unsigned int ind=0; ind<(*JetHand).size() && ind<MAXJET; ind++){
-      const pat::Jet& jet2 = (*JetHand)[ind];
-      const pat::Jet& jet =  (*JetHand)[ind].correctedJet("Uncorrected");
-      
-      if( jet2.pt() < JetPtCutTag ) continue;
-      
-      /// default scale factor: Raw & L1 & L2 & L3
-      /// http://cmslxr.fnal.gov/lxr/source/DataFormats/PatCandidates/interface/JetCorrFactors.h
-      
-      JetIDSelectionFunctor jetIDFunctorLoose(JetIDSelectionFunctor::PURE09, JetIDSelectionFunctor::LOOSE);
-      JetIDSelectionFunctor jetIDFunctorTight(JetIDSelectionFunctor::PURE09, JetIDSelectionFunctor::TIGHT);
-      
-      mCaloAK4JetIDLOOSE[jeti] = jetIDFunctorLoose(jet2);
-      mCaloAK4JetIDTIGHT[jeti] = jetIDFunctorTight(jet2);
-      
-      mCaloAK4JetPt[jeti]      =  jet.pt();
-      mCaloAK4JetPx[jeti]      =  jet.momentum().X();
-      mCaloAK4JetPy[jeti]      =  jet.momentum().Y();
-      mCaloAK4JetPz[jeti]      =  jet.momentum().Z();
-      mCaloAK4JetE[jeti]       =  jet.energy();
-      
-      mCaloAK4JetEta[jeti]     =  jet2.eta();
-      mCaloAK4JetPhi[jeti]     =  jet2.phi();
-      mCaloAK4JetEmf[jeti]     =  jet2.emEnergyFraction();
-      mCaloAK4JetN90[jeti]     =  jet2.n90();
-    
-      mCaloAK4JetN90Hits[jeti] =  jet2.jetID().n90Hits ;
-      mCaloAK4JetfHPD[jeti]    =  jet2.jetID().fHPD ;
-      mCaloAK4JetfRBX[jeti]    =  jet2.jetID().fRBX ;
-      mCaloAK4JetIDEmf[jeti]   =  jet2.jetID().restrictedEMF;
-      
-      mCaloAK4JetSigEta[jeti]  =  jet2.etaetaMoment();
-      mCaloAK4JetSigPhi[jeti]  =  jet2.phiphiMoment();
-    
-      mCaloAK4JetPtCor[jeti]   =  jet2.pt();
-      mCaloAK4JetPxCor[jeti]   =  jet2.momentum().X();
-      mCaloAK4JetPyCor[jeti]   =  jet2.momentum().Y();
-      mCaloAK4JetPzCor[jeti]   =  jet2.momentum().Z();
-      mCaloAK4JetECor[jeti]    =  jet2.energy();
-    
-      mCaloAK4JetBtagTkCountHighEff[jeti] = jet.bDiscriminator("trackCountingHighEffBJetTags");
-      mCaloAK4JetBTagSimpleSecVtx[jeti]   = jet.bDiscriminator("simpleSecondaryVertexBJetTags");
-      mCaloAK4JetBTagCombSecVtx[jeti]     = jet.bDiscriminator("combinedSecondaryVertexBJetTags");
-      
-      const reco::TrackRefVector &tracks = jet.associatedTracks();
-      double ptsum = 0;
-      for (size_t i = 0; i < tracks.size(); ++i){
-	ptsum += tracks[i]->pt();
-      }
-      mCaloAK4TrackPt[jeti] = ptsum; 
-      
-      if(isMCTag){
-	if(jet.genJet()!= 0){
-	  mGenAK4JetPt[jeti]=jet.genJet()->pt();
-	  mGenAK4JetE[jeti]=jet.genJet()->energy();
-	  mGenAK4JetPx[jeti]=jet.genJet()->momentum().X();
-	  mGenAK4JetPy[jeti]=jet.genJet()->momentum().Y();
-	  mGenAK4JetPz[jeti]=jet.genJet()->momentum().z();
-	  mGenAK4JetEta[jeti]=jet.genJet()->eta();
-	  mGenAK4JetPhi[jeti]=jet.genJet()->phi();
-	  mGenAK4JetEmEnergy[jeti]=jet.genJet()->emEnergy();
-	  mGenAK4JetHadEnergy[jeti]=jet.genJet()->emEnergy();
-	}
-	else {
-	  mGenAK4JetPt[jeti]       =-999;
-	  mGenAK4JetE[jeti]        =-999;
-	  mGenAK4JetPx[jeti]       =-999;
-	  mGenAK4JetPy[jeti]       =-999;
-	  mGenAK4JetPz[jeti]       =-999;
-	  mGenAK4JetEta[jeti]      =-999;
-	  mGenAK4JetPhi[jeti]      =-999;
-	  mGenAK4JetEmEnergy[jeti] =-999;
-	  mGenAK4JetHadEnergy[jeti]=-999;
-	}
-      }      
-      jeti++;
-    }
-  }//if(includeNonPFCollection)
-  mNCaloAK4Jets = jeti;
-  if(debugMode && mNCaloAK4Jets>0){
-    cout<<"CaloJet0: Pt= "<<mCaloAK4JetPtCor[0]
-	<<", Eta= "<<mCaloAK4JetEta[0]
-	<<", Phi= "<<mCaloAK4JetPhi[0]
-	<<endl;
-  }
   */
   
   ///-------------------------------------------------------------------------- 
@@ -1513,7 +1454,7 @@ void NtupleAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
     mPFAK4JetBtagTkCountHighPur[jeti]   = jet.bDiscriminator("trackCountingHighPurBJetTags");
     mPFAK4JetBtagJetProbability[jeti]   = jet.bDiscriminator("jetProbabilityBJetTags");
     mPFAK4JetBtagJetBProbability[jeti]  = jet.bDiscriminator("jetBProbabilityBJetTags");
-    mPFAK4JetBTagSimpleSecVtx[jeti]     = 0.; //jet.bDiscriminator("simpleSecondaryVertexBJetTags");
+    mPFAK4JetBTagCSVv2[jeti]            = jet.bDiscriminator("pfCombinedInclusiveSecondaryVertexV2BJetTags");
     mPFAK4JetBTagCombSecVtx[jeti]       = jet.bDiscriminator("combinedSecondaryVertexBJetTags");
     mPFAK4JetBTagCombSecVtxMVA[jeti]    = jet.bDiscriminator("combinedSecondaryVertexMVABJetTags");  
    
@@ -1618,6 +1559,194 @@ void NtupleAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
     cout<<"PFJet1: Pt= "<<mPFAK4JetPtCor[1]<<", Eta= "<<mPFAK4JetEta[1]<<", Phi= "<<mPFAK4JetPhi[1]<<", PUJetID= "<<mPFAK4JetPUFullJetId[1]<<endl;
     cout<<"      : NHEF= "<<mPFAK4JetNeuHadEngFrac[1]<<", CHEF= "<<mPFAK4JetChaHadEngFrac[1]<<", NEMF= "<<mPFAK4JetNeuEmEngFrac[1]<<", CEMF= "<<mPFAK4JetChaEmEngFrac[1]<<endl;
     cout<<"      : MuEF= "<<mPFAK4JetMuonEng[1]/mPFAK4JetE[1]<<", ElecEF= "<<mPFAK4JetElecEng[1]/mPFAK4JetE[1]<<", PhotonEF= "<<mPFAK4JetPhotEng[1]/mPFAK4JetE[1]<<endl;
+  }
+  
+  
+
+  ///-------------------------------------------------------------------------- 
+  /// AK8PFJet
+  ///--------------------------------------------------------------------------
+  edm::Handle<edm::View<pat::Jet> > JetHandAK8;
+  iEvent.getByLabel(PFJetAK8Tag_,JetHandAK8);
+  jeti=0;
+    
+  for(unsigned int ind=0; ind<(*JetHandAK8).size() && ind<MAXJET; ind++){
+    const pat::Jet& jet2 = (*JetHandAK8)[ind];
+    const pat::Jet& jet = (*JetHandAK8)[ind].correctedJet("Uncorrected");
+    
+    if( jet2.pt() < JetPtCutTag ) continue;
+    
+    mPFAK8JetIDLOOSE[jeti]              = 0.;//pfjetIDFunctorLoose(jet2);
+    mPFAK8JetIDTIGHT[jeti]              = 0.;//pfjetIDFunctorTight(jet2); 
+    
+    mPFAK8JetPUFullJetId[jeti]          = jet2.userFloat("pileupJetId:fullDiscriminant");
+        
+    mPFAK8JetPt[jeti]                   = jet.pt();
+    mPFAK8JetPx[jeti]                   = jet.momentum().X();
+    mPFAK8JetPy[jeti]                   = jet.momentum().Y();
+    mPFAK8JetPz[jeti]                   = jet.momentum().Z();
+    mPFAK8JetE[jeti]                    = jet.energy();
+    
+    mPFAK8JetEta[jeti]                  = jet2.eta();
+    mPFAK8JetPhi[jeti]                  = jet2.phi();		
+    mPFAK8JetN90[jeti]                  = jet2.n90();
+    mPFAK8JetNumOfDaughters[jeti]       = jet2.numberOfDaughters();
+    
+    ///use uncorrected jet for jetID
+    mPFAK8JetN90Hits[jeti]              = jet.jetID().n90Hits ;
+    mPFAK8JetfHPD[jeti]                 = jet.jetID().fHPD ;
+    mPFAK8JetfRBX[jeti]                 = jet.jetID().fRBX ;
+    mPFAK8JetIDEmf[jeti]                = jet.jetID().restrictedEMF;
+    
+    mPFAK8JetSigEta[jeti]               = jet2.etaetaMoment();
+    mPFAK8JetSigPhi[jeti]               = jet2.phiphiMoment();
+    mPFAK8JetPtCor[jeti]                = jet2.pt();
+    mPFAK8JetPxCor[jeti]                = jet2.momentum().X();
+    mPFAK8JetPyCor[jeti]                = jet2.momentum().Y();
+    mPFAK8JetPzCor[jeti]                = jet2.momentum().Z();
+    mPFAK8JetECor[jeti]                 = jet2.energy();
+
+    ///JPT or PFJet specific information
+    mPFAK8JetNumOfMuon[jeti]            = jet2.muonMultiplicity();
+    mPFAK8JetNumOfChaMu[jeti]           = jet2.chargedMultiplicity();
+
+    mPFAK8JetChaEmEng[jeti]             = jet2.chargedEmEnergy();
+    mPFAK8JetNeuEmEng[jeti]             = jet2.neutralEmEnergy();
+    mPFAK8JetChaHadEng[jeti]            = jet2.chargedHadronEnergy();
+    mPFAK8JetNeuHadEng[jeti]            = jet2.neutralHadronEnergy();
+    mPFAK8JetPhotEng[jeti]              = jet2.photonEnergy();
+    mPFAK8JetElecEng[jeti]              = jet2.electronEnergy();
+    mPFAK8JetMuonEng[jeti]              = jet2.muonEnergy();
+    mPFAK8JetHFHadEng[jeti]             = jet2.HFHadronEnergy();
+    mPFAK8JetHFEmEng[jeti]              = jet2.HFEMEnergy();
+    
+    //Relative to uncorrected jet energy
+    mPFAK8JetNeuEmEngFrac[jeti]         = jet2.neutralEmEnergyFraction();
+    mPFAK8JetChaEmEngFrac[jeti]         = jet2.chargedEmEnergyFraction();
+    mPFAK8JetChaHadEngFrac[jeti]        = jet2.chargedHadronEnergyFraction();
+    mPFAK8JetNeuHadEngFrac[jeti]        = jet2.neutralHadronEnergyFraction();
+    
+    mPFAK8JetNumOfChaHad[jeti]          = jet2.chargedHadronMultiplicity();
+    mPFAK8JetNumOfNeuHad[jeti]          = jet2.neutralHadronMultiplicity();
+    mPFAK8JetNumOfPhot[jeti]            = jet2.photonMultiplicity();
+    mPFAK8JetNumOfElec[jeti]            = jet2.electronMultiplicity();
+    mPFAK8JetNumOfHFHad[jeti]           = jet2.HFHadronMultiplicity();
+    mPFAK8JetNumOfHFEM[jeti]            = jet2.HFEMMultiplicity();
+    
+    mPFAK8JetChaMuEng[jeti]             = jet2.chargedMuEnergy();
+     
+    mPFAK8JetNumOfNeu[jeti]             = jet2.neutralMultiplicity();
+    mPFAK8JetNumOfCha[jeti]             = jet2.chargedMultiplicity();
+    
+    mPFAK8JetBtagTkCountHighEff[jeti]   = jet.bDiscriminator("trackCountingHighEffBJetTags");
+    mPFAK8JetBtagTkCountHighPur[jeti]   = jet.bDiscriminator("trackCountingHighPurBJetTags");
+    mPFAK8JetBtagJetProbability[jeti]   = jet.bDiscriminator("jetProbabilityBJetTags");
+    mPFAK8JetBtagJetBProbability[jeti]  = jet.bDiscriminator("jetBProbabilityBJetTags");
+    mPFAK8JetBTagCSVv2[jeti]            = jet.bDiscriminator("pfCombinedInclusiveSecondaryVertexV2BJetTags");
+    mPFAK8JetBTagCombSecVtx[jeti]       = jet.bDiscriminator("combinedSecondaryVertexBJetTags");
+    mPFAK8JetBTagCombSecVtxMVA[jeti]    = jet.bDiscriminator("combinedSecondaryVertexMVABJetTags");  
+   
+    ///-----------Jets Uncertanity --------------------------------------------------------
+    if(isMCTag){
+      //jecUnc->setJetEta(jet2.eta() ); // Give rapidity of jet you want tainty on
+      //jecUnc->setJetPt( jet2.pt() );// Also give the corrected pt of the jet you want the uncertainty on
+      // The following function gives the relative uncertainty in the jet Pt.
+      // i.e. ptCorSmeared = (1 +- uncer) * ptCor  
+      //mPFAK8uncer[jeti] =    jecUnc->getUncertainty(true); 
+      // In principle, boolean controls if uncertainty on +ve or -ve side is returned (asymmetric errors) but not yet implemented.
+
+      // Addition by Jyothsna: Jet flavour needed for b-tagging
+      // Store algorithmic jet flavour definition
+      mPFAK8JetFlavour[jeti] = jet.partonFlavour();
+      // flavour of the parton matched to jet (0 if no match)
+      mPFAK8JetGenPartonFlavour[jeti] = (jet.genParton() == nullptr) ? 0 : jet.genParton()->pdgId();
+      
+      if(jet2.genJet()!= 0){
+	  mGenPFAK8JetPt[jeti]        = jet2.genJet()->pt();
+	  mGenPFAK8JetE[jeti]         = jet2.genJet()->energy();
+	  mGenPFAK8JetPx[jeti]        = jet2.genJet()->momentum().X();
+	  mGenPFAK8JetPy[jeti]        = jet2.genJet()->momentum().Y();
+	  mGenPFAK8JetPz[jeti]        = jet2.genJet()->momentum().z();
+	  mGenPFAK8JetEta[jeti]       = jet2.genJet()->eta();
+	  mGenPFAK8JetPhi[jeti]       = jet2.genJet()->phi();
+	  mGenPFAK8JetEmEnergy[jeti]  = jet2.genJet()->emEnergy();
+	  mGenPFAK8JetHadEnergy[jeti] = jet2.genJet()->emEnergy();  
+	  if(fabs(mPFAK8JetEta[jeti])<0.5){
+	    mPFAK8JERCentral[jeti] = 1.052;
+	    mPFAK8JERUp[jeti]      = 0.990;
+	    mPFAK8JERDown[jeti]    = 1.115;
+	  } 
+	  else if(fabs(mPFAK8JetEta[jeti])>=0.5 && fabs(mPFAK8JetEta[jeti])<1.1){
+	    mPFAK8JERCentral[jeti] = 1.057;
+	    mPFAK8JERUp[jeti]      = 1.001;
+	    mPFAK8JERDown[jeti]    = 1.114;
+	  }
+	  else if(fabs(mPFAK8JetEta[jeti])>=1.1 && fabs(mPFAK8JetEta[jeti])<1.7){
+	    mPFAK8JERCentral[jeti] = 1.096;
+	    mPFAK8JERUp[jeti]      = 1.032;
+	    mPFAK8JERDown[jeti]    = 1.161;
+	  }
+	  else if(fabs(mPFAK8JetEta[jeti])>=1.7 && fabs(mPFAK8JetEta[jeti])<2.3){
+	    mPFAK8JERCentral[jeti] = 1.134;
+	    mPFAK8JERUp[jeti]      = 1.042;
+	    mPFAK8JERDown[jeti]    = 1.228;
+	  }
+	  else if(fabs(mPFAK8JetEta[jeti])>=2.3 && fabs(mPFAK8JetEta[jeti])<5.0){
+	    mPFAK8JERCentral[jeti] = 1.288;
+	    mPFAK8JERUp[jeti]      = 1.089;
+	    mPFAK8JERDown[jeti]    = 1.488;
+	  }
+	  else{
+	    mPFAK8JERCentral[jeti] = -999.;
+	    mPFAK8JERUp[jeti]      = -999.;
+	    mPFAK8JERDown[jeti]    = -999.;
+	  }
+	}
+	else {
+	  mGenPFAK8JetPt[jeti]        = -999;
+	  mGenPFAK8JetE[jeti]         = -999;
+	  mGenPFAK8JetPx[jeti]        = -999;
+	  mGenPFAK8JetPy[jeti]        = -999;
+	  mGenPFAK8JetPz[jeti]        = -999;
+	  mGenPFAK8JetEta[jeti]       = -999;
+	  mGenPFAK8JetPhi[jeti]       = -999;
+	  mGenPFAK8JetEmEnergy[jeti]  = -999;
+	  mGenPFAK8JetHadEnergy[jeti] = -999;
+	  mPFAK8JERCentral[jeti]      = -999.;
+	  mPFAK8JERUp[jeti]           = -999.;
+	  mPFAK8JERDown[jeti]         = -999.;
+	}
+    }
+    else{
+      mPFAK8uncer[jeti]           = 0.;
+      mGenPFAK8JetPt[jeti]        = -999;
+      mGenPFAK8JetE[jeti]         = -999;
+      mGenPFAK8JetPx[jeti]        = -999;
+      mGenPFAK8JetPy[jeti]        = -999;
+      mGenPFAK8JetPz[jeti]        = -999;
+      mGenPFAK8JetEta[jeti]       = -999;
+      mGenPFAK8JetPhi[jeti]       = -999;
+      mGenPFAK8JetEmEnergy[jeti]  = -999;
+      mGenPFAK8JetHadEnergy[jeti] = -999;
+      mPFAK8JERCentral[jeti]      = -999.;
+      mPFAK8JERUp[jeti]           = -999.;
+      mPFAK8JERDown[jeti]         = -999.;
+    }		
+    jeti++;
+  }
+  mNPFAK8Jets = jeti; 
+  if(debugMode){
+    cout<<"N(PFJet): "<<mNPFAK8Jets<<endl;
+  }
+  if(debugMode && mNPFAK8Jets>0){
+    cout<<"PFJet0: Pt= "<<mPFAK8JetPtCor[0]<<", Eta= "<<mPFAK8JetEta[0]<<", Phi= "<<mPFAK8JetPhi[0]<<", PUJetID= "<<mPFAK8JetPUFullJetId[0]<<endl;
+    cout<<"      : NHEF= "<<mPFAK8JetNeuHadEngFrac[0]<<", CHEF= "<<mPFAK8JetChaHadEngFrac[0]<<", NEMF= "<<mPFAK8JetNeuEmEngFrac[0]<<", CEMF= "<<mPFAK8JetChaEmEngFrac[0]<<endl;
+    cout<<"      : MuEF= "<<mPFAK8JetMuonEng[0]/mPFAK8JetE[0]<<", ElecEF= "<<mPFAK8JetElecEng[0]/mPFAK8JetE[0]<<", PhotonEF= "<<mPFAK8JetPhotEng[0]/mPFAK8JetE[0]<<endl;
+  }
+  if(debugMode && mNPFAK8Jets>1){
+    cout<<"PFJet1: Pt= "<<mPFAK8JetPtCor[1]<<", Eta= "<<mPFAK8JetEta[1]<<", Phi= "<<mPFAK8JetPhi[1]<<", PUJetID= "<<mPFAK8JetPUFullJetId[1]<<endl;
+    cout<<"      : NHEF= "<<mPFAK8JetNeuHadEngFrac[1]<<", CHEF= "<<mPFAK8JetChaHadEngFrac[1]<<", NEMF= "<<mPFAK8JetNeuEmEngFrac[1]<<", CEMF= "<<mPFAK8JetChaEmEngFrac[1]<<endl;
+    cout<<"      : MuEF= "<<mPFAK8JetMuonEng[1]/mPFAK8JetE[1]<<", ElecEF= "<<mPFAK8JetElecEng[1]/mPFAK8JetE[1]<<", PhotonEF= "<<mPFAK8JetPhotEng[1]/mPFAK8JetE[1]<<endl;
   }
   
   
@@ -1775,61 +1904,6 @@ void NtupleAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
   
   
   ///-------------------------------------------------------------------------- 
-  /// TC Mets
-  ///--------------------------------------------------------------------------
-  Handle<View<pat::MET> > TCMetHand;
-  iEvent.getByLabel("patMETsTC",TCMetHand);
-  if(TCMetHand.isValid()){
-    const View<pat::MET> & tcmets = *TCMetHand;
-    //
-    mMetPt[20]    = tcmets[0].et();
-    mMetPhi[20]   = tcmets[0].phi();
-    mMetPx[20]    = tcmets[0].px();
-    mMetPy[20]    = tcmets[0].py();
-    mMetSumEt[20] = tcmets[0].sumEt();
-    //
-    // CSC removed uncorrected MET values
-    /*mMetPt[21]    = tcmets[0].uncorrectedPt(pat::MET::uncorrNONE); 
-    mMetPhi[21]   = tcmets[0].uncorrectedPhi(pat::MET::uncorrNONE); 
-    mMetPx[21]    = tcmets[0].corEx(pat::MET::uncorrNONE); 
-    mMetPy[21]    = tcmets[0].corEy(pat::MET::uncorrNONE); 
-    mMetSumEt[21] = tcmets[0].corSumEt(pat::MET::uncorrNONE); */
-    //
-    // CSC removed uncorrected MET values
-    /*mMetPt[22]    = tcmets[0].uncorrectedPt(pat::MET::uncorrALL); 
-    mMetPhi[22]   = tcmets[0].uncorrectedPhi(pat::MET::uncorrALL); 
-    mMetPx[22]    = tcmets[0].corEx(pat::MET::uncorrALL); 
-    mMetPy[22]    = tcmets[0].corEy(pat::MET::uncorrALL); 
-    mMetSumEt[22] = tcmets[0].corSumEt(pat::MET::uncorrALL); */
-    //
-    // CSC removed uncorrected MET values
-    /*mMetPt[23]    = tcmets[0].uncorrectedPt(pat::MET::uncorrJES); 
-    mMetPhi[23]   = tcmets[0].uncorrectedPhi(pat::MET::uncorrJES); 
-    mMetPx[23]    = tcmets[0].corEx(pat::MET::uncorrJES); 
-    mMetPy[23]    = tcmets[0].corEy(pat::MET::uncorrJES); 
-    mMetSumEt[23] = tcmets[0].corSumEt(pat::MET::uncorrJES); */
-    //
-    // CSC removed uncorrected MET values
-    /*mMetPt[24]    = tcmets[0].uncorrectedPt(pat::MET::uncorrMUON); 
-    mMetPhi[24]   = tcmets[0].uncorrectedPhi(pat::MET::uncorrMUON); 
-    mMetPx[24]    = tcmets[0].corEx(pat::MET::uncorrMUON); 
-    mMetPy[24]    = tcmets[0].corEy(pat::MET::uncorrMUON); 
-    mMetSumEt[24] = tcmets[0].corSumEt(pat::MET::uncorrMUON); */
-    //
-    // CSC removed uncorrected MET values
-    /*mMetPt[25]    = tcmets[0].uncorrectedPt(pat::MET::uncorrTAU); 
-    mMetPhi[25]   = tcmets[0].uncorrectedPhi(pat::MET::uncorrTAU); 
-    mMetPx[25]    = tcmets[0].corEx(pat::MET::uncorrTAU); 
-    mMetPy[25]    = tcmets[0].corEy(pat::MET::uncorrTAU); 
-    mMetSumEt[25] = tcmets[0].corSumEt(pat::MET::uncorrTAU); */
-    
-    if(debugMode){
-      std::cout<<"TcMET= "<<mMetPt[20]<<", METPhi= "<<mMetPhi[20]<<std::endl;
-    }
-  }
-  
-  
-  ///-------------------------------------------------------------------------- 
   /// Pat MHT
   ///--------------------------------------------------------------------------
   /*
@@ -1847,10 +1921,11 @@ void NtupleAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
   ///-------------------------------------------------------------------------- 
   /// Vertices
   ///--------------------------------------------------------------------------
+
    reco::Vertex primaryvtx;
   Handle<reco::VertexCollection> recVtxs;
-  //iEvent.getByLabel("offlineSlimmedPrimaryVertices",recVtxs);
-  iEvent.getByLabel("goodVertices",recVtxs);
+  iEvent.getByLabel("offlineSlimmedPrimaryVertices",recVtxs);
+  //iEvent.getByLabel("goodVertices",recVtxs);
   int  pvind=0;
   for(unsigned int ind=0;ind<recVtxs->size();ind++){
     if(!((*recVtxs)[ind].isFake())){
@@ -2299,7 +2374,7 @@ void NtupleAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
   /// Photons
   ///--------------------------------------------------------------------------
   edm::Handle<edm::View<pat::Photon> > PhotHand;
-  iEvent.getByLabel("cleanPatPhotons",PhotHand);
+  iEvent.getByLabel("slimmedPhotons",PhotHand);
   int photi=0;
   if(PhotHand.isValid()){
     for(unsigned int ind=0; ind<(*PhotHand).size() && ind<MAXPHOT; ind++){ 
@@ -2567,7 +2642,7 @@ void NtupleAnalyzer::beginJob()
   mtree->Branch("PFAK4JetBtagTkCountHighPur"                         ,mPFAK4JetBtagTkCountHighPur                         ,"PFAK4JetBtagTkCountHighPur[NPFAK4Jets]/D");
   mtree->Branch("PFAK4JetBtagJetProbability"                         ,mPFAK4JetBtagJetProbability                         ,"PFAK4JetBtagJetProbability[NPFAK4Jets]/D");
   mtree->Branch("PFAK4JetBtagJetBProbability"                        ,mPFAK4JetBtagJetBProbability                        ,"PFAK4JetBtagJetBProbability[NPFAK4Jets]/D");
-  mtree->Branch("PFAK4JetBTagSimpleSecVtx"                           ,mPFAK4JetBTagSimpleSecVtx                           ,"PFAK4JetBTagSimpleSecVtx[NPFAK4Jets]/D");
+  mtree->Branch("PFAK4JetBTagCSVv2"                           ,mPFAK4JetBTagCSVv2                           ,"PFAK4JetBTagCSVv2[NPFAK4Jets]/D");
   mtree->Branch("PFAK4JetBTagCombSecVtx"                             ,mPFAK4JetBTagCombSecVtx                             ,"PFAK4JetBTagCombSecVtx[NPFAK4Jets]/D");
   mtree->Branch("PFAK4JetBTagCombSecVtxMVA"                          ,mPFAK4JetBTagCombSecVtxMVA                          ,"PFAK4JetBTagCombSecVtxMVA[NPFAK4Jets]/D");
   //
@@ -2620,6 +2695,91 @@ void NtupleAnalyzer::beginJob()
   mtree->Branch("PFAK4JERCentral"                                    ,mPFAK4JERCentral                                    ,"PFAK4JERCentral[NPFAK4Jets]/D");
   mtree->Branch("PFAK4JERUp"                                         ,mPFAK4JERUp                                         ,"PFAK4JERUp[NPFAK4Jets]/D");
   mtree->Branch("PFAK4JERDown"                                       ,mPFAK4JERDown                                       ,"PFAK4JERDown[NPFAK4Jets]/D");
+
+
+  ///-------------------------------------------------------------------------- 
+  /// PF AK8 Jets
+  ///-------------------------------------------------------------------------- 
+  mtree->Branch("NPFAK8Jets"                                         ,&mNPFAK8Jets                                        ,"NPFAK8Jets/I");
+  mtree->Branch("PFAK8JetE"                                          ,mPFAK8JetE                                          ,"PFAK8JetE[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetPt"                                         ,mPFAK8JetPt                                         ,"PFAK8JetPt[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetPx"                                         ,mPFAK8JetPx                                         ,"PFAK8JetPx[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetPy"                                         ,mPFAK8JetPy                                         ,"PFAK8JetPy[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetPz"                                         ,mPFAK8JetPz                                         ,"PFAK8JetPz[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetEta"                                        ,mPFAK8JetEta                                        ,"PFAK8JetEta[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetPhi"                                        ,mPFAK8JetPhi                                        ,"PFAK8JetPhi[NPFAK8Jets]/D");
+  //
+  mtree->Branch("PFAK8JetfHPD"                                       ,mPFAK8JetfHPD                                       ,"PFAK8JetfHPD[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetfRBX"                                       ,mPFAK8JetfRBX                                       ,"PFAK8JetfRBX[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetN90Hits"                                    ,mPFAK8JetN90Hits                                    ,"PFAK8JetN90Hits[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetN90"                                        ,mPFAK8JetN90                                        ,"PFAK8JetN90[NPFAK8Jets]/I"); 
+  mtree->Branch("PFAK8JetSigEta"                                     ,mPFAK8JetSigEta                                     ,"PFAK8JetSigEta[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetSigPhi"                                     ,mPFAK8JetSigPhi                                     ,"PFAK8JetSigPhi[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetIDEmf"                                      ,mPFAK8JetIDEmf                                      ,"PFAK8JetIDEmf[NPFAK8Jets]/D"); 
+  //
+  mtree->Branch("PFAK8JetECor"                                       ,mPFAK8JetECor                                       ,"PFAK8JetECor[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetPtCor"                                      ,mPFAK8JetPtCor                                      ,"PFAK8JetPtCor[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetPxCor"                                      ,mPFAK8JetPxCor                                      ,"PFAK8JetPxCor[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetPyCor"                                      ,mPFAK8JetPyCor                                      ,"PFAK8JetPyCor[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetPzCor"                                      ,mPFAK8JetPzCor                                      ,"PFAK8JetPzCor[NPFAK8Jets]/D");
+  //
+  mtree->Branch("PFAK8JetBtagTkCountHighEff"                         ,mPFAK8JetBtagTkCountHighEff                         ,"PFAK8JetBtagTkCountHighEff[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetBtagTkCountHighPur"                         ,mPFAK8JetBtagTkCountHighPur                         ,"PFAK8JetBtagTkCountHighPur[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetBtagJetProbability"                         ,mPFAK8JetBtagJetProbability                         ,"PFAK8JetBtagJetProbability[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetBtagJetBProbability"                        ,mPFAK8JetBtagJetBProbability                        ,"PFAK8JetBtagJetBProbability[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetBTagCSVv2"                           ,mPFAK8JetBTagCSVv2                           ,"PFAK8JetBTagCSVv2[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetBTagCombSecVtx"                             ,mPFAK8JetBTagCombSecVtx                             ,"PFAK8JetBTagCombSecVtx[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetBTagCombSecVtxMVA"                          ,mPFAK8JetBTagCombSecVtxMVA                          ,"PFAK8JetBTagCombSecVtxMVA[NPFAK8Jets]/D");
+  //
+  mtree->Branch("PFAK8JetFlavour"                                    ,mPFAK8JetFlavour                                    ,"PFAK8JetFlavour[NPFAK8Jets]/I");
+  mtree->Branch("PFAK8JetGenPartonFlavour"                           ,mPFAK8JetGenPartonFlavour                           ,"PFAK8JetGenPartonFlavour[NPFAK8Jets]/I");
+  //
+  mtree->Branch("PFAK8JetNeuEmEngFrac"                               ,mPFAK8JetNeuEmEngFrac                               ,"PFAK8JetNeuEmEngFrac[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetChaEmEngFrac"                               ,mPFAK8JetChaEmEngFrac                               ,"PFAK8JetChaEmEngFrac[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetChaHadEngFrac"                              ,mPFAK8JetChaHadEngFrac                              ,"PFAK8JetChaHadEngFrac[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetNeuHadEngFrac"                              ,mPFAK8JetNeuHadEngFrac                              ,"PFAK8JetNeuHadEngFrac[NPFAK8Jets]/D");
+  // 
+  mtree->Branch("PFAK8JetChaEmEng"                                   ,mPFAK8JetChaEmEng                                   ,"PFAK8JetChaEmEng[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetNeuEmEng"                                   ,mPFAK8JetNeuEmEng                                   ,"PFAK8JetNeuEmEng[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetChaHadEng"                                  ,mPFAK8JetChaHadEng                                  ,"PFAK8JetChaHadEng[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetNeuHadEng"                                  ,mPFAK8JetNeuHadEng                                  ,"PFAK8JetNeuHadEng[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetPhotEng"                                    ,mPFAK8JetPhotEng                                    ,"PFAK8JetPhotEng[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetElecEng"                                    ,mPFAK8JetElecEng                                    ,"PFAK8JetElecEng[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JetMuonEng"                                    ,mPFAK8JetMuonEng                                    ,"PFAK8JetMuonEng[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetHFHadEng"                                   ,mPFAK8JetHFHadEng                                   ,"PFAK8JetHFHadEng[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetHFEmEng"                                    ,mPFAK8JetHFEmEng                                    ,"PFAK8JetHFEmEng[NPFAK8Jets]/D"); 
+  mtree->Branch("PFAK8JetChaMuEng"                                   ,mPFAK8JetChaMuEng                                   ,"PFAK8JetChaMuEng[NPFAK8Jets]/D"); 
+  //
+  mtree->Branch("PFAK8JetNumOfChaMu"                                 ,mPFAK8JetNumOfChaMu                                 ,"PFAK8JetNumOfChaMu[NPFAK8Jets]/I"); 
+  mtree->Branch("PFAK8JetNumOfMuon"                                  ,mPFAK8JetNumOfMuon                                  ,"PFAK8JetNumOfMuon[NPFAK8Jets]/I"); 
+  mtree->Branch("PFAK8JetNumOfPhot"                                  ,mPFAK8JetNumOfPhot                                  ,"PFAK8JetNumOfPhot[NPFAK8Jets]/I"); 
+  mtree->Branch("PFAK8JetNumOfElec"                                  ,mPFAK8JetNumOfElec                                  ,"PFAK8JetNumOfElec[NPFAK8Jets]/I"); 
+  mtree->Branch("PFAK8JetNumOfNeu"                                   ,mPFAK8JetNumOfNeu                                   ,"PFAK8JetNumOfNeu[NPFAK8Jets]/I"); 
+  mtree->Branch("PFAK8JetNumOfCha"                                   ,mPFAK8JetNumOfCha                                   ,"PFAK8JetNumOfCha[NPFAK8Jets]/I"); 
+  mtree->Branch("PFAK8JetNumOfNeuHad"                                ,mPFAK8JetNumOfNeuHad                                ,"PFAK8JetNumOfNeuHad[NPFAK8Jets]/I"); 
+  mtree->Branch("PFAK8JetNumOfChaHad"                                ,mPFAK8JetNumOfChaHad                                ,"PFAK8JetNumOfChaHad[NPFAK8Jets]/I"); 
+  mtree->Branch("PFAK8JetNumOfHFHad"                                 ,mPFAK8JetNumOfHFHad                                 ,"PFAK8JetNumOfHFHad[NPFAK8Jets]/I"); 
+  mtree->Branch("PFAK8JetNumOfHFEM"                                  ,mPFAK8JetNumOfHFEM                                  ,"PFAK8JetNumOfHFEM[NPFAK8Jets]/I"); 
+  //
+  mtree->Branch("PFAK8JetNumOfDaughters"                             ,mPFAK8JetNumOfDaughters                             ,"PFAK8JetNumOfDaughters[NPFAK8Jets]/I");
+  mtree->Branch("PFAK8JetIDLOOSE"                                    ,mPFAK8JetIDLOOSE                                    ,"PFAK8JetIDLOOSE[NPFAK8Jets]/I");
+  mtree->Branch("PFAK8JetIDTIGHT"                                    ,mPFAK8JetIDTIGHT                                    ,"PFAK8JetIDTIGHT[NPFAK8Jets]/I");
+  mtree->Branch("PFAK8JetPUFullJetId"                                ,mPFAK8JetPUFullJetId                                ,"PFAK8JetPUFullJetId[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8uncer"                                         ,mPFAK8uncer                                         ,"PFAK8uncer[NPFAK8Jets]/D");
+  /// Gen PFAK8 Jets
+  mtree->Branch("GenPFAK8JetE"                                       ,mGenPFAK8JetE                                       ,"GenPFAK8JetE[NPFAK8Jets]/D");
+  mtree->Branch("GenPFAK8JetPt"                                      ,mGenPFAK8JetPt                                      ,"GenPFAK8JetPt[NPFAK8Jets]/D");
+  mtree->Branch("GenPFAK8JetPx"                                      ,mGenPFAK8JetPx                                      ,"GenPFAK8JetPx[NPFAK8Jets]/D");
+  mtree->Branch("GenPFAK8JetPy"                                      ,mGenPFAK8JetPy                                      ,"GenPFAK8JetPy[NPFAK8Jets]/D");
+  mtree->Branch("GenPFAK8JetPz"                                      ,mGenPFAK8JetPz                                      ,"GenPFAK8JetPz[NPFAK8Jets]/D");
+  mtree->Branch("GenPFAK8JetEta"                                     ,mGenPFAK8JetEta                                     ,"GenPFAK8JetEta[NPFAK8Jets]/D");
+  mtree->Branch("GenPFAK8JetPhi"                                     ,mGenPFAK8JetPhi                                     ,"GenPFAK8JetPhi[NPFAK8Jets]/D");
+  mtree->Branch("GenPFAK8JetEmEnergy"                                ,mGenPFAK8JetEmEnergy                                ,"GenPFAK8JetEmEnergy[NPFAK8Jets]/D");
+  mtree->Branch("GenPFAK8JetHadEnergy"                               ,mGenPFAK8JetHadEnergy                               ,"GenPFAK8JetHadEnergy[NPFAK8Jets]/D");
+  //
+  mtree->Branch("PFAK8JERCentral"                                    ,mPFAK8JERCentral                                    ,"PFAK8JERCentral[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JERUp"                                         ,mPFAK8JERUp                                         ,"PFAK8JERUp[NPFAK8Jets]/D");
+  mtree->Branch("PFAK8JERDown"                                       ,mPFAK8JERDown                                       ,"PFAK8JERDown[NPFAK8Jets]/D");
 
   ///-------------------------------------------------------------------------- 
   /// MET
