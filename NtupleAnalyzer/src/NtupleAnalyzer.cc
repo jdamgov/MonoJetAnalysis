@@ -756,69 +756,30 @@ private:
   double  mTauPz[MAXTAU]; 
   double  mTauEta[MAXTAU]; 
   double  mTauPhi[MAXTAU];
-  double  mTauEtaEtaMoment[MAXTAU]; 
-  double  mTauPhiPhiMoment[MAXTAU]; 
-  double  mTauEtaPhiMoment[MAXTAU]; 			
-  double  mTauLeadPFChargedHadrCandsignedSipt[MAXTAU];
-  double  mTauIsoPFChargedHadrCandsPtSum[MAXTAU];
-  double  mTauIsoPFGammaCandsEtSum[MAXTAU];      
-  double  mTauMaximumHCALPFClusterEt[MAXTAU];    
-  double  mTauEmFraction[MAXTAU];                
-  double  mTauHcalTotOverPLead[MAXTAU];          
-  double  mTauHcalMaxOverPLead[MAXTAU];          
-  double  mTauHcal3x3OverPLead[MAXTAU];          
-  double  mTauEcalStripSumEOverPLead[MAXTAU];    
-  double  mTauBremsRecoveryEOverPLead[MAXTAU];         
-  double  mTauElectronPreIDOutput[MAXTAU];       
-  double  mTauElectronPreIDDecision[MAXTAU];     
-  double  mTauCaloComp[MAXTAU];                  
-  double  mTauSegComp[MAXTAU];                   
-  double  mTauMuonDecision[MAXTAU]; 
   //
-  double  mTausignalPFChargedHadrCands[MAXTAU];
-  double  mTausignalPFGammaCands[MAXTAU];
-  //
-  double  mTauDisAgainstElectronDeadECAL[MAXTAU];
   double  mTauDisAgainstElectronLoose[MAXTAU];
-  double  mTauDisAgainstElectronLooseMVA2[MAXTAU];
-  double  mTauDisAgainstElectronLooseMVA3[MAXTAU];
-  double  mTauDisAgainstElectronMVA[MAXTAU];
-  double  mTauDisAgainstElectronMVA2category[MAXTAU];
-  double  mTauDisAgainstElectronMVA2raw[MAXTAU];
-  double  mTauDisAgainstElectronMVA3category[MAXTAU];
-  double  mTauDisAgainstElectronMVA3raw[MAXTAU];
+  double  mTauDisAgainstElectronLooseMVA5[MAXTAU];
   double  mTauDisAgainstElectronMedium[MAXTAU];
-  double  mTauDisAgainstElectronMediumMVA2[MAXTAU];
-  double  mTauDisAgainstElectronMediumMVA3[MAXTAU];
+  double  mTauDisAgainstElectronMediumMVA5[MAXTAU];
   double  mTauDisAgainstElectronTight[MAXTAU];
-  double  mTauDisAgainstElectronTightMVA2[MAXTAU];
-  double  mTauDisAgainstElectronTightMVA3[MAXTAU];
-  double  mTauDisAgainstElectronVLooseMVA2[MAXTAU];
+  double  mTauDisAgainstElectronTightMVA5[MAXTAU];
+  double  mTauDisAgainstElectronVLooseMVA5[MAXTAU];
   double  mTauDisAgainstElectronVTightMVA3[MAXTAU];
   double  mTauDisAgainstMuonLoose[MAXTAU];
   double  mTauDisAgainstMuonLoose2[MAXTAU];
   double  mTauDisAgainstMuonMedium[MAXTAU];
   double  mTauDisAgainstMuonMedium2[MAXTAU];
-  double  mTauDisAgainstMuonTight[MAXTAU];
-  double  mTauDisAgainstMuonTight2[MAXTAU];
-  double  mTauDisByCombinedIsolationDeltaBetaCorrRaw[MAXTAU];
   double  mTauDisByCombinedIsolationDeltaBetaCorrRaw3Hits[MAXTAU];
-  double  mTauDisByIsolationMVA2raw[MAXTAU];
-  double  mTauDisByIsolationMVAraw[MAXTAU];
-  double  mTauDisByLooseCombinedIsolationDeltaBetaCorr[MAXTAU];
   double  mTauDisByLooseCombinedIsolationDeltaBetaCorr3Hits[MAXTAU];
-  double  mTauDisByLooseIsolationMVA[MAXTAU];
-  double  mTauDisByLooseIsolationMVA2[MAXTAU];
-  double  mTauDisByMediumCombinedIsolationDeltaBetaCorr[MAXTAU];
   double  mTauDisByMediumCombinedIsolationDeltaBetaCorr3Hits[MAXTAU];
-  double  mTauDisByMediumIsolationMVA[MAXTAU];
-  double  mTauDisByMediumIsolationMVA2[MAXTAU];
-  double  mTauDisByTightCombinedIsolationDeltaBetaCorr[MAXTAU];
   double  mTauDisByTightCombinedIsolationDeltaBetaCorr3Hits[MAXTAU];
-  double  mTauDisByTightIsolationMVA[MAXTAU];
-  double  mTauDisByTightIsolationMVA2[MAXTAU];
-  double  mTauDisByVLooseCombinedIsolationDeltaBetaCorr[MAXTAU];
   double  mTauDisDecayModeFinding[MAXTAU];
+  double  mTauDisDecayModeFindingNewDMs[MAXTAU];
+
+  double  mTauChargedIsoPtSum[MAXTAU];
+  double  mTauNeutralIsoPtSum[MAXTAU];
+  double  mTauPUCorrPtSum[MAXTAU];
+
   //
   double  mTauJetPt[MAXTAU];
   double  mTauJetEta[MAXTAU];
@@ -836,77 +797,30 @@ private:
   double  mPFTauPz[MAXTAU]; 
   double  mPFTauEta[MAXTAU]; 
   double  mPFTauPhi[MAXTAU];
-  double  mPFTauEtaEtaMoment[MAXTAU]; 
-  double  mPFTauPhiPhiMoment[MAXTAU]; 
-  double  mPFTauEtaPhiMoment[MAXTAU]; 			
-  double  mPFTauLeadPFChargedHadrCandsignedSipt[MAXTAU];
-  double  mPFTauIsoPFChargedHadrCandsPtSum[MAXTAU];
-  double  mPFTauIsoPFGammaCandsEtSum[MAXTAU];      
-  double  mPFTauMaximumHCALPFClusterEt[MAXTAU];    
-  double  mPFTauEmFraction[MAXTAU];                
-  double  mPFTauHcalTotOverPLead[MAXTAU];          
-  double  mPFTauHcalMaxOverPLead[MAXTAU];          
-  double  mPFTauHcal3x3OverPLead[MAXTAU];          
-  double  mPFTauEcalStripSumEOverPLead[MAXTAU];    
-  double  mPFTauBremsRecoveryEOverPLead[MAXTAU];         
-  double  mPFTauElectronPreIDOutput[MAXTAU];       
-  double  mPFTauElectronPreIDDecision[MAXTAU];     
-  double  mPFTauCaloComp[MAXTAU];                  
-  double  mPFTauSegComp[MAXTAU];                   
-  double  mPFTauMuonDecision[MAXTAU]; 
   //
-  double  mPFTausignalPFChargedHadrCands[MAXTAU];
-  double  mPFTausignalPFGammaCands[MAXTAU];
-  //
-  double  mPFTauDisAgainstElectronDeadECAL[MAXTAU];
   double  mPFTauDisAgainstElectronLoose[MAXTAU];
-  double  mPFTauDisAgainstElectronLooseMVA2[MAXTAU];
-  double  mPFTauDisAgainstElectronLooseMVA3[MAXTAU];
-  double  mPFTauDisAgainstElectronMVA[MAXTAU];
-  double  mPFTauDisAgainstElectronMVA2category[MAXTAU];
-  double  mPFTauDisAgainstElectronMVA2raw[MAXTAU];
-  double  mPFTauDisAgainstElectronMVA3category[MAXTAU];
-  double  mPFTauDisAgainstElectronMVA3raw[MAXTAU];
+  double  mPFTauDisAgainstElectronLooseMVA5[MAXTAU];
   double  mPFTauDisAgainstElectronMedium[MAXTAU];
-  double  mPFTauDisAgainstElectronMediumMVA2[MAXTAU];
-  double  mPFTauDisAgainstElectronMediumMVA3[MAXTAU];
+  double  mPFTauDisAgainstElectronMediumMVA5[MAXTAU];
   double  mPFTauDisAgainstElectronTight[MAXTAU];
-  double  mPFTauDisAgainstElectronTightMVA2[MAXTAU];
-  double  mPFTauDisAgainstElectronTightMVA3[MAXTAU];
-  double  mPFTauDisAgainstElectronVLooseMVA2[MAXTAU];
+  double  mPFTauDisAgainstElectronTightMVA5[MAXTAU];
+  double  mPFTauDisAgainstElectronVLooseMVA5[MAXTAU];
   double  mPFTauDisAgainstElectronVTightMVA3[MAXTAU];
-  double  mPFTauDisAgainstMuonLoose[MAXTAU];
   double  mPFTauDisAgainstMuonLoose2[MAXTAU];
+  double  mPFTauDisAgainstMuonLoose3[MAXTAU];
   double  mPFTauDisAgainstMuonMedium[MAXTAU];
   double  mPFTauDisAgainstMuonMedium2[MAXTAU];
-  double  mPFTauDisAgainstMuonTight[MAXTAU];
-  double  mPFTauDisAgainstMuonTight2[MAXTAU];
-  double  mPFTauDisByCombinedIsolationDeltaBetaCorrRaw[MAXTAU];
+  double  mPFTauDisAgainstMuonTight3[MAXTAU];
   double  mPFTauDisByCombinedIsolationDeltaBetaCorrRaw3Hits[MAXTAU];
-  double  mPFTauDisByIsolationMVA2raw[MAXTAU];
-  double  mPFTauDisByIsolationMVAraw[MAXTAU];
-  double  mPFTauDisByLooseCombinedIsolationDeltaBetaCorr[MAXTAU];
   double  mPFTauDisByLooseCombinedIsolationDeltaBetaCorr3Hits[MAXTAU];
-  double  mPFTauDisByLooseIsolation[MAXTAU];
-  double  mPFTauDisByLooseIsolationDeltaBetaCorr[MAXTAU];
-  double  mPFTauDisByLooseIsolationMVA[MAXTAU];
-  double  mPFTauDisByLooseIsolationMVA2[MAXTAU];
-  double  mPFTauDisByMediumCombinedIsolationDeltaBetaCorr[MAXTAU];
   double  mPFTauDisByMediumCombinedIsolationDeltaBetaCorr3Hits[MAXTAU];
-  double  mPFTauDisByMediumIsolation[MAXTAU];
-  double  mPFTauDisByMediumIsolationDeltaBetaCorr[MAXTAU];
-  double  mPFTauDisByMediumIsolationMVA[MAXTAU];
-  double  mPFTauDisByMediumIsolationMVA2[MAXTAU];
-  double  mPFTauDisByTightCombinedIsolationDeltaBetaCorr[MAXTAU];
   double  mPFTauDisByTightCombinedIsolationDeltaBetaCorr3Hits[MAXTAU];
-  double  mPFTauDisByTightIsolation[MAXTAU];
-  double  mPFTauDisByTightIsolationDeltaBetaCorr[MAXTAU];
-  double  mPFTauDisByTightIsolationMVA[MAXTAU];
-  double  mPFTauDisByTightIsolationMVA2[MAXTAU];
-  double  mPFTauDisByVLooseCombinedIsolationDeltaBetaCorr[MAXTAU];
-  double  mPFTauDisByVLooseIsolation[MAXTAU];
-  double  mPFTauDisByVLooseIsolationDeltaBetaCorr[MAXTAU];
   double  mPFTauDisDecayModeFinding[MAXTAU];
+  double  mPFTauDisDecayModeFindingNewDMs[MAXTAU];
+
+  double  mPFTauChargedIsoPtSum[MAXTAU];
+  double  mPFTauNeutralIsoPtSum[MAXTAU];
+  double  mPFTauPUCorrPtSum[MAXTAU];
   //
   double  mPFTauJetPt[MAXTAU];
   double  mPFTauJetEta[MAXTAU];
@@ -2242,10 +2156,10 @@ void NtupleAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
   ///-------------------------------------------------------------------------- 
   /// PFTaus
   ///--------------------------------------------------------------------------
-  //edm::Handle<pat::TauCollection> TauHand;
-  //iEvent.getByLabel(PFTauTag_,TauHand);
+  edm::Handle<pat::TauCollection> TauHand;
+  iEvent.getByLabel(PFTauTag_,TauHand);
   int taui=0;
-  /*
+  
   for(unsigned int ind=0; ind<(*TauHand).size() && ind<MAXTAU; ind++){ 
     const pat::Tau& tau = (*TauHand)[ind];
     
@@ -2258,92 +2172,39 @@ void NtupleAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
     mPFTauPhi[taui]                                            = tau.phi();
     mPFTauCharge[taui]                                         = tau.charge();
     
-    //
-    mPFTauEtaEtaMoment[taui]                                   = tau.etaetaMoment();
-    mPFTauPhiPhiMoment[taui]                                   = tau.phiphiMoment();
-    mPFTauEtaPhiMoment[taui]                                   = tau.etaphiMoment();
-    
-    //PF objects
-    mPFTauLeadPFChargedHadrCandsignedSipt[taui]                = tau.leadPFChargedHadrCandsignedSipt();  
-    mPFTauIsoPFChargedHadrCandsPtSum[taui]                     = tau.isolationPFChargedHadrCandsPtSum();
-    mPFTauIsoPFGammaCandsEtSum[taui]                           = tau.isolationPFGammaCandsEtSum();      
-    mPFTauMaximumHCALPFClusterEt[taui]                         = tau.maximumHCALPFClusterEt();          
-    mPFTauEmFraction[taui]                                     = tau.emFraction();                      
-    mPFTauHcalTotOverPLead[taui]                               = tau.hcalTotOverPLead();                
-    mPFTauHcalMaxOverPLead[taui]                               = tau.hcalMaxOverPLead();                
-    mPFTauHcal3x3OverPLead[taui]                               = tau.hcal3x3OverPLead();                
-    mPFTauEcalStripSumEOverPLead[taui]                         = tau.ecalStripSumEOverPLead();          
-    mPFTauBremsRecoveryEOverPLead[taui]                        = tau.bremsRecoveryEOverPLead();                 
-    mPFTauElectronPreIDOutput[taui]                            = tau.electronPreIDOutput();             
-    mPFTauElectronPreIDDecision[taui]                          = tau.electronPreIDDecision();            
-    mPFTauCaloComp[taui]                                       = tau.caloComp();                        
-    mPFTauSegComp[taui]                                        = tau.segComp();                         
-    mPFTauMuonDecision[taui]                                   = tau.muonDecision(); 
-    
-    //
-    mPFTausignalPFChargedHadrCands[taui]                       = tau.signalPFChargedHadrCands().size();
-    mPFTausignalPFGammaCands[taui]                             = tau.signalPFGammaCands().size();
-    
     //ID
-    mPFTauDisAgainstElectronDeadECAL[taui]                     = tau.tauID("againstElectronDeadECAL"); //OK
     mPFTauDisAgainstElectronLoose[taui]                        = tau.tauID("againstElectronLoose");
-    mPFTauDisAgainstElectronLooseMVA3[taui]                    = tau.tauID("againstElectronLooseMVA3");
+    mPFTauDisAgainstElectronLooseMVA5[taui]                    = tau.tauID("againstElectronLooseMVA5");
     mPFTauDisAgainstElectronMedium[taui]                       = tau.tauID("againstElectronMedium");
-    mPFTauDisAgainstElectronMediumMVA3[taui]                   = tau.tauID("againstElectronMediumMVA3");
-    mPFTauDisAgainstElectronMVA3category[taui]                 = tau.tauID("againstElectronMVA3category");
-    mPFTauDisAgainstElectronMVA3raw[taui]                      = tau.tauID("againstElectronMVA3raw");
+    mPFTauDisAgainstElectronMediumMVA5[taui]                   = tau.tauID("againstElectronMediumMVA5");
     mPFTauDisAgainstElectronTight[taui]                        = tau.tauID("againstElectronTight");
-    mPFTauDisAgainstElectronTightMVA3[taui]                    = tau.tauID("againstElectronTightMVA3");
-    mPFTauDisAgainstElectronVTightMVA3[taui]                   = tau.tauID("againstElectronVTightMVA3");
-    mPFTauDisAgainstElectronLooseMVA2[taui]                    = 0.;//tau.tauID("againstElectronLooseMVA2");
-    mPFTauDisAgainstElectronMediumMVA2[taui]                   = 0.;//tau.tauID("againstElectronMediumMVA2");
-    mPFTauDisAgainstElectronMVA2category[taui]                 = 0.;//tau.tauID("againstElectronMVA2category");
-    mPFTauDisAgainstElectronMVA2raw[taui]                      = 0.;//tau.tauID("againstElectronMVA2raw");
-    mPFTauDisAgainstElectronMVA[taui]                          = 0.;//tau.tauID("againstElectronMVA");
-    mPFTauDisAgainstElectronTightMVA2[taui]                    = 0.;//tau.tauID("againstElectronTightMVA2");
-    mPFTauDisAgainstElectronVLooseMVA2[taui]                   = 0.;//tau.tauID("againstElectronVLooseMVA2");
+    mPFTauDisAgainstElectronTightMVA5[taui]                    = tau.tauID("againstElectronTightMVA5");
+    mPFTauDisAgainstElectronVTightMVA3[taui]                   = tau.tauID("againstElectronVTightMVA5");
+
+    mPFTauDisAgainstElectronVLooseMVA5[taui]                   = tau.tauID("againstElectronVLooseMVA5");
     // 
-    mPFTauDisAgainstMuonLoose2[taui]                           = tau.tauID("againstMuonLoose2");
-    //mPFTauDisAgainstMuonLoose3[taui]                           = tau.tauID("againstMuonLoose3");
-    mPFTauDisAgainstMuonLoose[taui]                            = tau.tauID("againstMuonLoose");
+    mPFTauDisAgainstMuonLoose3[taui]                           = tau.tauID("againstMuonLoose3");
     mPFTauDisAgainstMuonMedium2[taui]                          = tau.tauID("againstMuonMedium2");
     mPFTauDisAgainstMuonMedium[taui]                           = tau.tauID("againstMuonMedium");
-    mPFTauDisAgainstMuonTight2[taui]                           = tau.tauID("againstMuonTight2");
-    //mPFTauDisAgainstMuonTight3[taui]                           = tau.tauID("againstMuonTight3");
-    mPFTauDisAgainstMuonTight[taui]                            = tau.tauID("againstMuonTight");
+    mPFTauDisAgainstMuonTight3[taui]                           = tau.tauID("againstMuonTight3");
     //
+
     mPFTauDisByCombinedIsolationDeltaBetaCorrRaw3Hits[taui]    = tau.tauID("byCombinedIsolationDeltaBetaCorrRaw3Hits");
-    mPFTauDisByCombinedIsolationDeltaBetaCorrRaw[taui]         = tau.tauID("byCombinedIsolationDeltaBetaCorrRaw");
     //
-    mPFTauDisByIsolationMVA2raw[taui]                          = tau.tauID("byIsolationMVA2raw");
-    mPFTauDisByIsolationMVAraw[taui]                           = tau.tauID("byIsolationMVAraw");
-    //
+
     mPFTauDisByLooseCombinedIsolationDeltaBetaCorr3Hits[taui]  = tau.tauID("byLooseCombinedIsolationDeltaBetaCorr3Hits");
-    mPFTauDisByLooseCombinedIsolationDeltaBetaCorr[taui]       = tau.tauID("byLooseCombinedIsolationDeltaBetaCorr");
-    mPFTauDisByLooseIsolation[taui]                            = tau.tauID("byLooseIsolation");
-    mPFTauDisByLooseIsolationDeltaBetaCorr[taui]               = tau.tauID("byLooseIsolationDeltaBetaCorr");
-    mPFTauDisByLooseIsolationMVA2[taui]                        = tau.tauID("byLooseIsolationMVA2");
-    mPFTauDisByLooseIsolationMVA[taui]                         = tau.tauID("byLooseIsolationMVA");
-    //
+
     mPFTauDisByMediumCombinedIsolationDeltaBetaCorr3Hits[taui] = tau.tauID("byMediumCombinedIsolationDeltaBetaCorr3Hits");
-    mPFTauDisByMediumCombinedIsolationDeltaBetaCorr[taui]      = tau.tauID("byMediumCombinedIsolationDeltaBetaCorr");
-    mPFTauDisByMediumIsolation[taui]                           = tau.tauID("byMediumIsolation");
-    mPFTauDisByMediumIsolationDeltaBetaCorr[taui]              = tau.tauID("byMediumIsolationDeltaBetaCorr");
-    mPFTauDisByMediumIsolationMVA2[taui]                       = tau.tauID("byMediumIsolationMVA2");
-    mPFTauDisByMediumIsolationMVA[taui]                        = tau.tauID("byMediumIsolationMVA");
     //
     mPFTauDisByTightCombinedIsolationDeltaBetaCorr3Hits[taui]  = tau.tauID("byTightCombinedIsolationDeltaBetaCorr3Hits");
-    mPFTauDisByTightCombinedIsolationDeltaBetaCorr[taui]       = tau.tauID("byTightCombinedIsolationDeltaBetaCorr");
-    mPFTauDisByTightIsolation[taui]                            = tau.tauID("byTightIsolation");
-    mPFTauDisByTightIsolationDeltaBetaCorr[taui]               = tau.tauID("byTightIsolationDeltaBetaCorr");
-    mPFTauDisByTightIsolationMVA2[taui]                        = tau.tauID("byTightIsolationMVA2");
-    mPFTauDisByTightIsolationMVA[taui]                         = tau.tauID("byTightIsolationMVA");
+
     //
-    mPFTauDisByVLooseCombinedIsolationDeltaBetaCorr[taui]      = tau.tauID("byVLooseCombinedIsolationDeltaBetaCorr");
-    mPFTauDisByVLooseIsolation[taui]                           = tau.tauID("byVLooseIsolation");
-    mPFTauDisByVLooseIsolationDeltaBetaCorr[taui]              = tau.tauID("byVLooseIsolationDeltaBetaCorr");
-    //
-    mPFTauDisDecayModeFinding[taui]                            = tau.tauID("decayModeFinding");
+    mPFTauDisDecayModeFinding[taui]                              = tau.tauID("decayModeFinding");
+    mPFTauDisDecayModeFindingNewDMs[taui]                        = tau.tauID("decayModeFindingNewDMs");
+    mPFTauChargedIsoPtSum[taui]                                  = tau.tauID("chargedIsoPtSum");
+    mPFTauNeutralIsoPtSum[taui]                                  = tau.tauID("neutralIsoPtSum");
+    mPFTauPUCorrPtSum[taui]                                      = tau.tauID("puCorrPtSum");
+
 
     //GenJet Pt
     mPFTauJetPt[taui]  =  -99.;
@@ -2358,7 +2219,7 @@ void NtupleAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
     taui++;  
     if(taui>=MAXTAU) break; 
   }
-  */
+  
   mNPFTau = taui;
   if(debugMode && mNPFTau>0){
     cout<<"PFTau0: Pt= "<<mPFTauPt[0]
@@ -2961,78 +2822,27 @@ void NtupleAnalyzer::beginJob()
   mtree->Branch("PFTauPhi"                                           ,mPFTauPhi                                           ,"PFTauPhi[NPFTau]/D" );
   mtree->Branch("PFTauCharge"                                        ,mPFTauCharge                                        ,"PFTauCharge[NPFTau]/I");
   //
-  mtree->Branch("PFTauEtaEtaMoment"                                  ,mPFTauEtaEtaMoment                                  ,"PFTauEtaEtaMoment[NPFTau]/D" );
-  mtree->Branch("PFTauPhiPhiMoment"                                  ,mPFTauPhiPhiMoment                                  ,"PFTauPhiPhiMoment[NPFTau]/D" );
-  mtree->Branch("PFTauEtaPhiMoment"                                  ,mPFTauEtaPhiMoment                                  ,"PFTauEtaPhiMoment[NPFTau]/D" );
-  //
-  mtree->Branch("PFTauLeadPFChargedHadrCandsignedSipt"               ,mPFTauLeadPFChargedHadrCandsignedSipt               ,"PFTauLeadPFChargedHadrCandsignedSipt[NPFTau]/D" );
-  mtree->Branch("PFTauIsoPFChargedHadrCandsPtSum"                    ,mPFTauIsoPFChargedHadrCandsPtSum                    ,"PFTauIsoPFChargedHadrCandsPtSum[NPFTau]/D" );
-  mtree->Branch("PFTauIsoPFGammaCandsEtSum"                          ,mPFTauIsoPFGammaCandsEtSum                          ,"PFTauIsoPFGammaCandsEtSum[NPFTau]/D" );
-  mtree->Branch("PFTauMaximumHCALPFClusterEt"                        ,mPFTauMaximumHCALPFClusterEt                        ,"PFTauMaximumHCALPFClusterEt[NPFTau]/D" );
-  mtree->Branch("PFTauEmFraction"                                    ,mPFTauEmFraction                                    ,"PFTauEmFraction[NPFTau]/D" );
-  mtree->Branch("PFTauHcalTotOverPLead"                              ,mPFTauHcalTotOverPLead                              ,"PFTauHcalTotOverPLead[NPFTau]/D" );
-  mtree->Branch("PFTauHcalMaxOverPLead"                              ,mPFTauHcalMaxOverPLead                              ,"PFTauHcalMaxOverPLead[NPFTau]/D" );
-  mtree->Branch("PFTauHcal3x3OverPLead"                              ,mPFTauHcal3x3OverPLead                              ,"PFTauHcal3x3OverPLead[NPFTau]/D" );
-  mtree->Branch("PFTauEcalStripSumEOverPLead"                        ,mPFTauEcalStripSumEOverPLead                        ,"PFTauEcalStripSumEOverPLead[NPFTau]/D" );
-  mtree->Branch("PFTauBremsRecoveryEOverPLead"                       ,mPFTauBremsRecoveryEOverPLead                       ,"PFTauBremsRecoveryEOverPLead[NPFTau]/D" );
-  mtree->Branch("PFTauElectronPreIDOutput"                           ,mPFTauElectronPreIDOutput                           ,"PFTauElectronPreIDOutput[NPFTau]/D" );
-  mtree->Branch("PFTauElectronPreIDDecision"                         ,mPFTauElectronPreIDDecision                         ,"PFTauElectronPreIDDecision[NPFTau]/D" );
-  mtree->Branch("PFTauCaloComp"                                      ,mPFTauCaloComp                                      ,"PFTauCaloComp[NPFTau]/D" );
-  mtree->Branch("PFTauSegComp"                                       ,mPFTauSegComp                                       ,"PFTauSegComp[NPFTau]/D" );
-  mtree->Branch("PFTauMuonDecision"                                  ,mPFTauMuonDecision                                  ,"PFTauMuonDecision[NPFTau]/D" );
-  //
-  mtree->Branch("PFTausignalPFChargedHadrCands"                      ,mPFTausignalPFChargedHadrCands                      ,"PFTausignalPFChargedHadrCands[NPFTau]/D" );
-  mtree->Branch("PFTausignalPFGammaCands"                            ,mPFTausignalPFGammaCands                            ,"PFTausignalPFGammaCands[NPFTau]/D" );
-  //
-  mtree->Branch("PFTauDisAgainstElectronDeadECAL"                    ,mPFTauDisAgainstElectronDeadECAL                    ,"PFTauDisAgainstElectronDeadECAL[NPFTau]/D");
   mtree->Branch("PFTauDisAgainstElectronLoose"                       ,mPFTauDisAgainstElectronLoose                       ,"PFTauDisAgainstElectronLoose[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronLooseMVA2"                   ,mPFTauDisAgainstElectronLooseMVA2                   ,"PFTauDisAgainstElectronLooseMVA2[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronLooseMVA3"                   ,mPFTauDisAgainstElectronLooseMVA3                   ,"PFTauDisAgainstElectronLooseMVA3[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronMVA2category"                ,mPFTauDisAgainstElectronMVA2category                ,"PFTauDisAgainstElectronMVA2category[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronMVA2raw"                     ,mPFTauDisAgainstElectronMVA2raw                     ,"PFTauDisAgainstElectronMVA2raw[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronMVA3category"                ,mPFTauDisAgainstElectronMVA3category                ,"PFTauDisAgainstElectronMVA3category[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronMVA3raw"                     ,mPFTauDisAgainstElectronMVA3raw                     ,"PFTauDisAgainstElectronMVA3raw[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronMVA"                         ,mPFTauDisAgainstElectronMVA                         ,"PFTauDisAgainstElectronMVA[NPFTau]/D");
+  mtree->Branch("PFTauDisAgainstElectronLooseMVA5"                   ,mPFTauDisAgainstElectronLooseMVA5                   ,"PFTauDisAgainstElectronLooseMVA5[NPFTau]/D");
   mtree->Branch("PFTauDisAgainstElectronMedium"                      ,mPFTauDisAgainstElectronMedium                      ,"PFTauDisAgainstElectronMedium[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronMediumMVA2"                  ,mPFTauDisAgainstElectronMediumMVA2                  ,"PFTauDisAgainstElectronMediumMVA2[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronMediumMVA3"                  ,mPFTauDisAgainstElectronMediumMVA3                  ,"PFTauDisAgainstElectronMediumMVA3[NPFTau]/D");
+  mtree->Branch("PFTauDisAgainstElectronMediumMVA5"                  ,mPFTauDisAgainstElectronMediumMVA5                  ,"PFTauDisAgainstElectronMediumMVA5[NPFTau]/D");
   mtree->Branch("PFTauDisAgainstElectronTight"                       ,mPFTauDisAgainstElectronTight                       ,"PFTauDisAgainstElectronTight[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronTightMVA2"                   ,mPFTauDisAgainstElectronTightMVA2                   ,"PFTauDisAgainstElectronTightMVA2[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronTightMVA3"                   ,mPFTauDisAgainstElectronTightMVA3                   ,"PFTauDisAgainstElectronTightMVA3[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstElectronVLooseMVA2"                  ,mPFTauDisAgainstElectronVLooseMVA2                  ,"PFTauDisAgainstElectronVLooseMVA2[NPFTau]/D");
+  mtree->Branch("PFTauDisAgainstElectronTightMVA5"                   ,mPFTauDisAgainstElectronTightMVA5                   ,"PFTauDisAgainstElectronTightMVA5[NPFTau]/D");
+  mtree->Branch("PFTauDisAgainstElectronVLooseMVA5"                  ,mPFTauDisAgainstElectronVLooseMVA5                  ,"PFTauDisAgainstElectronVLooseMVA5[NPFTau]/D");
   mtree->Branch("PFTauDisAgainstElectronVTightMVA3"                  ,mPFTauDisAgainstElectronVTightMVA3                  ,"PFTauDisAgainstElectronVTightMVA3[NPFTau]/D");
   mtree->Branch("PFTauDisAgainstMuonLoose2"                          ,mPFTauDisAgainstMuonLoose2                          ,"PFTauDisAgainstMuonLoose2[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstMuonLoose"                           ,mPFTauDisAgainstMuonLoose                           ,"PFTauDisAgainstMuonLoose[NPFTau]/D");
   mtree->Branch("PFTauDisAgainstMuonMedium2"                         ,mPFTauDisAgainstMuonMedium2                         ,"PFTauDisAgainstMuonMedium2[NPFTau]/D");
   mtree->Branch("PFTauDisAgainstMuonMedium"                          ,mPFTauDisAgainstMuonMedium                          ,"PFTauDisAgainstMuonMedium[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstMuonTight2"                          ,mPFTauDisAgainstMuonTight2                          ,"PFTauDisAgainstMuonTight2[NPFTau]/D");
-  mtree->Branch("PFTauDisAgainstMuonTight"                           ,mPFTauDisAgainstMuonTight                           ,"PFTauDisAgainstMuonTight[NPFTau]/D");
+  mtree->Branch("PFTauDisAgainstMuonTight3"                          ,mPFTauDisAgainstMuonTight3                          ,"PFTauDisAgainstMuonTight3[NPFTau]/D");
   mtree->Branch("PFTauDisByCombinedIsolationDeltaBetaCorrRaw3Hits"   ,mPFTauDisByCombinedIsolationDeltaBetaCorrRaw3Hits   ,"PFTauDisByCombinedIsolationDeltaBetaCorrRaw3Hits[NPFTau]/D");
-  mtree->Branch("PFTauDisByCombinedIsolationDeltaBetaCorrRaw"        ,mPFTauDisByCombinedIsolationDeltaBetaCorrRaw        ,"PFTauDisByCombinedIsolationDeltaBetaCorrRaw[NPFTau]/D");
-  mtree->Branch("PFTauDisByIsolationMVA2raw"                         ,mPFTauDisByIsolationMVA2raw                         ,"PFTauDisByIsolationMVA2raw[NPFTau]/D");
-  mtree->Branch("PFTauDisByIsolationMVAraw"                          ,mPFTauDisByIsolationMVAraw                          ,"PFTauDisByIsolationMVAraw[NPFTau]/D");
   mtree->Branch("PFTauDisByLooseCombinedIsolationDeltaBetaCorr3Hits" ,mPFTauDisByLooseCombinedIsolationDeltaBetaCorr3Hits ,"PFTauDisByLooseCombinedIsolationDeltaBetaCorr3Hits[NPFTau]/D");
-  mtree->Branch("PFTauDisByLooseCombinedIsolationDeltaBetaCorr"      ,mPFTauDisByLooseCombinedIsolationDeltaBetaCorr      ,"PFTauDisByLooseCombinedIsolationDeltaBetaCorr[NPFTau]/D");
-  mtree->Branch("PFTauDisByLooseIsolationDeltaBetaCorr"              ,mPFTauDisByLooseIsolationDeltaBetaCorr              ,"PFTauDisByLooseIsolationDeltaBetaCorr[NPFTau]/D");
-  mtree->Branch("PFTauDisByLooseIsolation"                           ,mPFTauDisByLooseIsolation                           ,"PFTauDisByLooseIsolation[NPFTau]/D");
-  mtree->Branch("PFTauDisByLooseIsolationMVA2"                       ,mPFTauDisByLooseIsolationMVA2                       ,"PFTauDisByLooseIsolationMVA2[NPFTau]/D");
-  mtree->Branch("PFTauDisByLooseIsolationMVA"                        ,mPFTauDisByLooseIsolationMVA                        ,"PFTauDisByLooseIsolationMVA[NPFTau]/D");
   mtree->Branch("PFTauDisByMediumCombinedIsolationDeltaBetaCorr3Hits",mPFTauDisByMediumCombinedIsolationDeltaBetaCorr3Hits,"PFTauDisByMediumCombinedIsolationDeltaBetaCorr3Hits[NPFTau]/D");
-  mtree->Branch("PFTauDisByMediumCombinedIsolationDeltaBetaCorr"     ,mPFTauDisByMediumCombinedIsolationDeltaBetaCorr     ,"PFTauDisByMediumCombinedIsolationDeltaBetaCorr[NPFTau]/D");
-  mtree->Branch("PFTauDisByMediumIsolationDeltaBetaCorr"             ,mPFTauDisByMediumIsolationDeltaBetaCorr             ,"PFTauDisByMediumIsolationDeltaBetaCorr[NPFTau]/D");
-  mtree->Branch("PFTauDisByMediumIsolation"                          ,mPFTauDisByMediumIsolation                          ,"PFTauDisByMediumIsolation[NPFTau]/D");
-  mtree->Branch("PFTauDisByMediumIsolationMVA2"                      ,mPFTauDisByMediumIsolationMVA2                      ,"PFTauDisByMediumIsolationMVA2[NPFTau]/D");
-  mtree->Branch("PFTauDisByMediumIsolationMVA"                       ,mPFTauDisByMediumIsolationMVA                       ,"PFTauDisByMediumIsolationMVA[NPFTau]/D");
   mtree->Branch("PFTauDisByTightCombinedIsolationDeltaBetaCorr3Hits" ,mPFTauDisByTightCombinedIsolationDeltaBetaCorr3Hits ,"PFTauDisByTightCombinedIsolationDeltaBetaCorr3Hits[NPFTau]/D");
-  mtree->Branch("PFTauDisByTightCombinedIsolationDeltaBetaCorr"      ,mPFTauDisByTightCombinedIsolationDeltaBetaCorr      ,"PFTauDisByTightCombinedIsolationDeltaBetaCorr[NPFTau]/D");
-  mtree->Branch("PFTauDisByTightIsolationDeltaBetaCorr"              ,mPFTauDisByTightIsolationDeltaBetaCorr              ,"PFTauDisByTightIsolationDeltaBetaCorr[NPFTau]/D");
-  mtree->Branch("PFTauDisByTightIsolation"                           ,mPFTauDisByTightIsolation                           ,"PFTauDisByTightIsolation[NPFTau]/D");
-  mtree->Branch("PFTauDisByTightIsolationMVA2"                       ,mPFTauDisByTightIsolationMVA2                       ,"PFTauDisByTightIsolationMVA2[NPFTau]/D");
-  mtree->Branch("PFTauDisByTightIsolationMVA"                        ,mPFTauDisByTightIsolationMVA                        ,"PFTauDisByTightIsolationMVA[NPFTau]/D");
-  mtree->Branch("PFTauDisByVLooseCombinedIsolationDeltaBetaCorr"     ,mPFTauDisByVLooseCombinedIsolationDeltaBetaCorr     ,"PFTauDisByVLooseCombinedIsolationDeltaBetaCorr[NPFTau]/D");
-  mtree->Branch("PFTauDisByVLooseIsolationDeltaBetaCorr"             ,mPFTauDisByVLooseIsolationDeltaBetaCorr             ,"PFTauDisByVLooseIsolationDeltaBetaCorr[NPFTau]/D");
-  mtree->Branch("PFTauDisByVLooseIsolation"                          ,mPFTauDisByVLooseIsolation                          ,"PFTauDisByVLooseIsolation[NPFTau]/D");
   mtree->Branch("PFTauDisDecayModeFinding"                           ,mPFTauDisDecayModeFinding                           ,"PFTauDisDecayModeFinding[NPFTau]/D");
+  mtree->Branch("PFTauDisDecayModeFindingNewDMs"                     ,mPFTauDisDecayModeFindingNewDMs                     ,"PFTauDisDecayModeFindingNewDMs[NPFTau]/D");
+  mtree->Branch("PFTauPUCorrPtSum"                                   ,mPFTauPUCorrPtSum                                   ,"PFTauPUCorrPtSum[NPFTau]/D");
+  mtree->Branch("PFTauNeutralIsoPtSum"                               ,mPFTauNeutralIsoPtSum                               ,"PFTauNeutralIsoPtSum[NPFTau]/D");
+  mtree->Branch("PFTauChargedIsoPtSum"                               ,mPFTauChargedIsoPtSum                               ,"PFTauChargedIsoPtSum[NPFTau]/D");
   //
   mtree->Branch("PFTauJetPt"                                         ,mPFTauJetPt                                         ,"PFTauJetPt[NPFTau]/D"); 
   mtree->Branch("PFTauJetEta"                                        ,mPFTauJetEta                                        ,"PFTauJetEta[NPFTau]/D"); 
