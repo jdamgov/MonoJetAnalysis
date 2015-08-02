@@ -1,0 +1,276 @@
+120319_011529: /uscmst1/prod/grid/CRAB_2_8_0/python/crab.py -create
+120319_011619: /uscmst1/prod/grid/CRAB_2_8_0/python/crab.py -create
+120319_012237: /uscmst1/prod/grid/CRAB_2_8_0/python/crab.py -create
+120319_012322: /uscmst1/prod/grid/CRAB_2_8_0/python/crab.py -create
+120319_144139: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120319_150003: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120418_232428: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120418_232506: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120419_000427: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -submit
+120419_000748: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120419_015547: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120419_015555: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -submit
+120419_021510: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c crab_0_120418_232506
+120419_094537: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120428_142358: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120516_170332: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120516_172715: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120521_001259: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120521_003641: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_134356: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120521_142316: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -submit
+120521_142630: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_143036: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_143452: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_144147: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_144702: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_152156: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_153248: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120521_163037: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -submit
+120521_164019: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_164347: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_164456: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120521_165700: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_170324: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c crab_0_120521_153248
+120521_172724: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c crab_0_120521_153248
+120521_173738: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_175248: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -submit
+120521_175258: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c crab_0_120521_153248
+120521_175805: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_180626: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120521_181356: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120522_000937: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120522_001716: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120522_001750: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120522_005110: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c crab_0_120522_001716
+120522_005845: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -submit
+120522_014619: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120522_015652: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120522_023233: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120522_025828: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120522_030655: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_013456: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120523_013614: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120523_021128: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -submit
+120523_021418: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_022116: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_022323: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_022748: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_024128: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_024440: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_024652: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_030509: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_030957: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_144213: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120523_144448: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120523_152704: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -submit
+120523_153159: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_153827: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_155001: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_155717: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_160928: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_161038: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_161439: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_164751: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_170938: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_172141: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_173331: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120523_173443: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_004719: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120531_004813: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120531_005002: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120531_012501: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120531_015358: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -submit
+120531_020253: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_024620: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_033642: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_141004: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_152315: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_160312: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_162327: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_164641: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_165050: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_165228: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_172205: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_182121: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_195344: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120531_203636: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120601_012121: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120601_141931: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status
+120606_183951: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c
+120606_184111: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120606_190213: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120606_231518: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120607_012912: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create
+120607_014842: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_014937: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015030: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015125: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015218: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015313: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015407: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015501: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015516: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass100GeV_M40TeV_madgraph
+120607_015554: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015639: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass100GeV_M40TeV_madgraph
+120607_015647: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015653: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015713: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_015805: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_021103: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass300GeV_M40TeV_madgraph
+120607_021121: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_021222: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_021321: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_021417: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_024509: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_024554: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_024558: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_025125: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_025702: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVd_mass1000GeV_M40TeV_madgraph
+120607_025724: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVd_mass1000GeV_M40TeV_madgraph
+120607_025734: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVd_mass100GeV_M40TeV_madgraph
+120607_025745: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVd_mass10GeV_M40TeV_madgraph
+120607_025808: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_025820: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVd_mass200GeV_M40TeV_madgraph
+120607_025832: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVd_mass300GeV_M40TeV_madgraph
+120607_025844: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVd_mass400GeV_M40TeV_madgraph
+120607_025858: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVd_mass700GeV_M40TeV_madgraph
+120607_025911: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120607_025928: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVu_mass100GeV_M40TeV_madgraph
+120607_025942: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVu_mass10GeV_M40TeV_madgraph
+120607_025945: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVu_mass1GeV_M40TeV_madgraph
+120607_025955: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVu_mass200GeV_M40TeV_madgraph
+120607_030009: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVu_mass300GeV_M40TeV_madgraph
+120607_030023: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVu_mass400GeV_M40TeV_madgraph
+120607_030037: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -kill all -c DM_AVu_mass700GeV_M40TeV_madgraph
+120607_030124: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass700GeV_M40TeV_madgraph
+120607_120313: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_120505: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_121804: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_122520: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_130319: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_130622: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_131314: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_132659: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_133637: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_133708: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_133713: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_134820: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_135548: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_135708: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_135903: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_140948: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_142338: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_142802: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_142827: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_142909: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_142944: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143019: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143054: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143129: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143204: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143240: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143314: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143349: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143424: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143459: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143535: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143610: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_143646: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120607_150243: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_150305: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_150315: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_150602: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass700GeV_M40TeV_madgraph
+120607_150920: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass10GeV_M40TeV_madgraph
+120607_150959: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_152042: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_152618: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_153424: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_153711: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_154649: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_154710: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_154721: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_154730: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_155814: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_155824: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_155830: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_160217: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_160754: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_170928: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_170943: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_170949: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_171007: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_171010: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_182527: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_182553: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_182610: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_182640: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass10GeV_M40TeV_madgraph
+120607_185511: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass10GeV_M40TeV_madgraph
+120607_192103: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_194135: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_194145: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_194151: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_195517: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_200326: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_202330: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_202601: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_202606: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_202635: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_202638: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_203852: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_203857: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass1GeV_M40TeV_madgraph
+120607_203901: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120608_055716: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120608_055737: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass400GeV_M40TeV_madgraph
+120608_055750: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass700GeV_M40TeV_madgraph
+120608_055807: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass700GeV_M40TeV_madgraph
+120608_055814: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass700GeV_M40TeV_madgraph
+120608_143921: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1GeV_M40TeV_madgraph
+120608_144021: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass10GeV_M40TeV_madgraph
+120608_144033: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVd_mass10GeV_M40TeV_madgraph
+120608_144120: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass10GeV_M40TeV_madgraph
+120608_144147: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass100GeV_M40TeV_madgraph
+120608_144158: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass200GeV_M40TeV_madgraph
+120608_144211: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass300GeV_M40TeV_madgraph
+120608_144221: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass400GeV_M40TeV_madgraph
+120608_144235: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass700GeV_M40TeV_madgraph
+120608_144334: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass1000GeV_M40TeV_madgraph
+120608_152649: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass1GeV_M40TeV_madgraph
+120608_152721: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVu_mass1GeV_M40TeV_madgraph
+120608_152809: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass1GeV_M40TeV_madgraph
+120608_153131: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass10GeV_M40TeV_madgraph
+120608_153146: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVu_mass10GeV_M40TeV_madgraph
+120608_153229: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass10GeV_M40TeV_madgraph
+120608_153303: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVu_mass100GeV_M40TeV_madgraph
+120608_153406: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass100GeV_M40TeV_madgraph
+120608_153414: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVu_mass100GeV_M40TeV_madgraph
+120608_153507: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass200GeV_M40TeV_madgraph
+120608_153711: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass300GeV_M40TeV_madgraph
+120608_153722: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass400GeV_M40TeV_madgraph
+120608_153741: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass700GeV_M40TeV_madgraph
+120608_153754: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120608_160020: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120609_012459: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120609_012730: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120609_012749: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120609_012804: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120609_012829: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -resubmit 1-3,5-60,62-74,76-87,89-116,118-129,131-169,171-200 -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120609_012929: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass700GeV_M40TeV_madgraph
+120609_013016: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -resubmit 6-7,10-14,22-24,28-31,39-40,47,53-57,63-66,69-73,77-78,86-89,94,114-117,119-131,133,136-183,185-190,192-200 -c DM_AVu_mass700GeV_M40TeV_madgraph
+120609_014126: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass001GeV_M40TeV_madgraph
+120609_201448: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass001GeV_M40TeV_madgraph
+120609_201503: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVu_mass001GeV_M40TeV_madgraph
+120609_201541: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120609_201557: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120609_201621: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass700GeV_M40TeV_madgraph
+120609_201632: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -get -c DM_AVu_mass700GeV_M40TeV_madgraph
+120609_201640: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass001GeV_M40TeV_madgraph
+120609_201649: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass1000GeV_M40TeV_madgraph
+120609_203950: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120609_204202: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120609_234002: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass001GeV_M40TeV_madgraph
+120609_234219: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -create -submit
+120610_032436: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass01GeV_M40TeV_madgraph
+120610_032449: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVu_mass001GeV_M40TeV_madgraph
+120610_032459: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass001GeV_M40TeV_madgraph
+120610_032513: /uscmst1/prod/grid/CRAB_2_8_1/python/crab.py -status -c DM_AVd_mass01GeV_M40TeV_madgraph
