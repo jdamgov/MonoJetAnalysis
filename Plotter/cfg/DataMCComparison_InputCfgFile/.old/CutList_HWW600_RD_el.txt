@@ -1,5 +1,0 @@
-#####################################################
-########## Cut String For TTree Draw Method #########
-#####################################################
-
-ggdboostedWevt==1 && GroomedJet_CA8_pt[0]>200 && W_pt>200 && event_met_pfmet>65 && GroomedJet_CA8_deltaphi_METca8jet > 2.0 && GroomedJet_CA8_deltaR_lca8jet > 1.57 &&  W_electron_pt > 35
