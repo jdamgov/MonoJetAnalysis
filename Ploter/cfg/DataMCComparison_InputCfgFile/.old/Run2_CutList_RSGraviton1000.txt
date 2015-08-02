@@ -1,0 +1,64 @@
+#####################################################
+########## Cut String For TTree Draw Method #########
+#####################################################
+
+## SB + SR
+
+v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && numberJetBin >= 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && numberJetBin >= 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 40 && jet_mass_pr < 130) && numberJetBin >= 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 40 && jet_mass_pr < 130) && jet_tau2tau1 < 0.5 && numberJetBin >= 2 
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 40 && jet_mass_pr < 130) && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>2.5 && vbf_maxpt_jj_m > 250
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 40 && jet_mass_pr < 130) && jet_tau2tau1 < 0.5 && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>2.5 
+
+## SB 
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && ((jet_mass_pr > 40 && jet_mass_pr < 65) || (jet_mass_pr > 105 && jet_mass_pr < 130)) && numberJetBin >= 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && ((jet_mass_pr > 40 && jet_mass_pr < 65) || (jet_mass_pr > 105 && jet_mass_pr < 130)) && jet_tau2tau1 < 0.5 && numberJetBin >= 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && ((jet_mass_pr > 40 && jet_mass_pr < 65) || (jet_mass_pr > 105 && jet_mass_pr < 130)) && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>2.5 && vbf_maxpt_jj_m > 250
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && ((jet_mass_pr > 40 && jet_mass_pr < 65) || (jet_mass_pr > 105 && jet_mass_pr < 130)) && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>2.5 && vbf_maxpt_jj_m > 250 && jet_tau2tau1 < 0.5
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <= 0.679 && vbf_maxpt_j2_bDiscriminatorCSV <= 0.679 && ((jet_mass_pr > 40 && jet_mass_pr < 65) || (jet_mass_pr >105 && jet_mass_pr <130)) && jet_tau2tau1 < 0.5 && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>3 && vbf_maxpt_jj_m > 250 && mass_ungroomedjet_closerjet > 210 && mass_leptonic_closerjet > 200
+
+
+## SR
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 65 && jet_mass_pr < 105)  && numberJetBin >= 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 65 && jet_mass_pr < 105) && jet_tau2tau1 < 0.5 && numberJetBin >= 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 65 && jet_mass_pr < 105) && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>2.5 && vbf_maxpt_jj_m > 250
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 65 && jet_mass_pr < 105) && jet_tau2tau1 < 0.5 && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>2.5 && vbf_maxpt_jj_m > 250
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 65 && jet_mass_pr < 105)  && jet_tau2tau1 < 0.5 && numberJetBin >= 2 
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 65 && jet_mass_pr < 105)  && jet_tau2tau1 < 0.5 && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>3 && vbf_maxpt_jj_m > 240
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 65 && jet_mass_pr < 105)  && jet_tau2tau1 < 0.5 && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>3 && vbf_maxpt_jj_m > 250
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && vbf_maxpt_j1_bDiscriminatorCSV <=0.679 && vbf_maxpt_j2_bDiscriminatorCSV <=0.679 && (jet_mass_pr > 65 && jet_mass_pr < 105)  && jet_tau2tau1 < 0.5 && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>3 && vbf_maxpt_jj_m > 250 && mass_ungroomedjet_closerjet > 210 && mass_leptonic_closerjet > 200
+
+
+####### ttbbar control region
+
+#pfMET> 50 && v_pt > 200 && l_pt>30  && abs(l_eta)<2.1 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=40 && ttb_ca8_mass_pr<=130) 
+
+#pfMET> 50 && v_pt > 200 && l_pt>30  && abs(l_eta)<2.4 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=40 && ttb_ca8_mass_pr<=130) && isttbar && jet_tau2tau1 < 0.5 && numberJetBin >= 2  && (vbf_maxpt_j1_bDiscriminatorCSV >=0.679 || vbf_maxpt_j2_bDiscriminatorCSV >=0.679)
+
+#pfMET> 50 && v_pt > 200 && l_pt>30  && abs(l_eta)<2.4 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=40 && ttb_ca8_mass_pr<=130) && isttbar && jet_tau2tau1 < 0.5 && numberJetBin >= 2  && (vbf_maxpt_j1_bDiscriminatorCSV >=0.679 || vbf_maxpt_j2_bDiscriminatorCSV >=0.679) && mass_ungroomedjet_closerjet > 208 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>3 && vbf_maxpt_jj_m > 250
+
+#pfMET> 50 && v_pt > 200 && l_pt>30  && abs(l_eta)<2.4 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=60 && ttb_ca8_mass_pr<=130) && isttbar && jet_tau2tau1 < 0.5 && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>3 && vbf_maxpt_jj_m > 240 && (vbf_maxpt_j1_bDiscriminatorCSV >=0.679 || vbf_maxpt_j2_bDiscriminatorCSV >=0.679)
+
+#pfMET> 50 && v_pt > 200 && l_pt>30  && abs(l_eta)<2.4 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=60 && ttb_ca8_mass_pr<=130) && isttbar && jet_tau2tau1 < 0.5 && numberJetBin >= 2 && abs(vbf_maxpt_j1_eta-vbf_maxpt_j2_eta)>3.2 && vbf_maxpt_jj_m > 350 && (vbf_maxpt_j1_bDiscriminatorCSV >=0.679 || vbf_maxpt_j2_bDiscriminatorCSV >=0.679)
+

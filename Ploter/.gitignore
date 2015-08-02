@@ -1,0 +1,10 @@
+KinFitter/obj/*
+NtuplePackage/obj/*
+bin/*
+NtuplePackage/bin/*
+obj/*
+*~
+*/*~
+output/*
+*/*/*.so
+*/*.so

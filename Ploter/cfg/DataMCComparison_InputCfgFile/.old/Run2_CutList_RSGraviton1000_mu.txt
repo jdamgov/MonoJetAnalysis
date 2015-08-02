@@ -1,0 +1,21 @@
+#####################################################
+########## Cut String For TTree Draw Method #########
+#####################################################
+
+## SB + SR
+
+issignal==1 && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && nBTagJet_medium <1 && jet_mass_pr > 40 && jet_mass_pr < 130 && jet_tau2tau1<0.5 
+
+#v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && nBTagJet_medium <1 && jet_mass_pr > 40 && jet_mass_pr < 130 && jet_tau2tau1<0.5
+
+## SB 
+
+
+## SR
+
+#issignal==1 && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && nBTagJet_medium <1 && jet_mass_pr > 65 && jet_mass_pr < 105 && jet_tau2tau1<0.5 
+
+####### ttbbar control region
+
+#v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && nBTagJet_medium > 0 && jet_mass_pr > 40 && jet_mass_pr < 130
+

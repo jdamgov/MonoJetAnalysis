@@ -1,0 +1,80 @@
+#####################################################
+########## Cut String For TTree Draw Method #########
+#####################################################
+
+## SB + SR
+
+issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && numberJetBin < 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && nbjets_csvm_veto == 0 && numberJetBin < 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && nbjets_csvm_veto == 0 && (jet_mass_pr > 40 && jet_mass_pr < 130) && numberJetBin < 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && nbjets_csvm_veto == 0 && (jet_mass_pr > 40 && jet_mass_pr < 130) && jet_tau2tau1 < 0.5 && numberJetBin < 2
+
+## SB
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && nbjets_csvm_veto == 0 && ((jet_mass_pr > 40 && jet_mass_pr < 65) || (jet_mass_pr > 105 && jet_mass_pr < 130)) && numberJetBin < 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && nbjets_csvm_veto == 0 && ((jet_mass_pr > 40 && jet_mass_pr < 65) || (jet_mass_pr > 105 && jet_mass_pr < 130)) && jet_tau2tau1 < 0.5 && numberJetBin < 2
+
+
+## SR
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && nbjets_csvm_veto == 0 && (jet_mass_pr > 65 && jet_mass_pr < 105) && numberJetBin < 2
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.4 && nbjets_csvm_veto == 0 && (jet_mass_pr > 65 && jet_mass_pr < 105) && jet_tau2tau1 < 0.5 && numberJetBin < 2
+
+
+####### ttbbar control region
+
+#pfMET> 50 && v_pt > 200 && l_pt>30  && abs(l_eta)<2.4 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=50 && ttb_ca8_mass_pr<=120) && isttbar
+
+
+#########################################
+### Jet Studies #########################
+#########################################
+
+#issignal && v_pt>200 && pfMET>50 && l_pt>30 && ungroomed_jet_pt>200 && abs(l_eta)<2.1  && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 350)
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=40 && jet_mass_pr<=130) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 350)
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 350)
+
+####### ttbbar control region
+
+#pfMET> 50 && v_pt > 200 && l_pt>50  && abs(l_eta)<2.1 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=40 && ttb_ca8_mass_pr<=130)
+
+#pfMET> 50 && v_pt > 200 && l_pt>50  && abs(l_eta)<2.1 && ttb_ca8_ungroomed_pt > 200 && ttb_ca8_ungroomed_pt < 275 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=40 && ttb_ca8_mass_pr<=130)
+
+#pfMET> 50 && v_pt > 200 && l_pt>50  && abs(l_eta)<2.1 && ttb_ca8_ungroomed_pt > 275 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=40 && ttb_ca8_mass_pr<=130)
+
+#pfMET> 50 && v_pt > 200 && l_pt>30  && abs(l_eta)<2.1 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=50 && ttb_ca8_mass_pr<=120) && ttb_ca8_tau2tau1 < 0.5
+
+#pfMET> 50 && v_pt > 200 && l_pt>30  && abs(l_eta)<2.1 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=50 && ttb_ca8_mass_pr<=120) && ttb_ca8_tau2tau1 > 0.75
+
+#pfMET> 50 && v_pt > 200 && l_pt>30  && abs(l_eta)<2.1 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( ttb_ca8_mass_pr>=50 && ttb_ca8_mass_pr<=120) && ttb_ca8_tau2tau1 > 0.5 && ttb_ca8_tau2tau1 < 0.75
+
+####### MVA studies
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 400) 
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 400) && jet_tau2tau1 < 0.438
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 400) && LD_PTBin_250_400 > 0.066
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 400) && Likelihood_PTBin_250_400 > 0.248
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 400) && MLP_PTBin_250_400 > 0.227
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 400) && MLPBFG_PTBin_250_400 > 0.228
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 400) && CFMlpANN_PTBin_250_400 > 0.238
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 400) && BDT_PTBin_250_400 > -0.132
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 400) && BDTF_PTBin_250_400 > -0.131
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr >=60 && jet_mass_pr<=100) && (ungroomed_jet_pt > 250 && ungroomed_jet_pt < 400) && BDTG_PTBin_250_400 > -0.571
+
+

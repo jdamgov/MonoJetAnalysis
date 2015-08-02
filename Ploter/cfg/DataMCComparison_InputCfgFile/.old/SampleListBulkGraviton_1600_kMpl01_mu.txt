@@ -1,0 +1,25 @@
+#####################################################################################################################
+#  Sample Name 					            Reduced Name      Color     XSec (pb)    NumEntriesBefore
+######################################################################################################################
+ofile_data                                                      DATA             1               1            1
+#oflie_WJets_Pythia                                              W+Jets           2           289.2      8955318
+#ofile_WJets_Herwig                                              W+Jets           2           289.2      13256090
+ofile_WJets_Pythia180                                           W+Jets            2           34.88      9739464
+ofile_WW                                                        WW               4          54.838     10000431
+ofile_WZ                                                        WZ               4         32.3161     10000283
+ofile_ZJets                                                     Z+Jets           5            3503     30459503
+ofile_ZZ                                                        ZZ               4            8.05      9799908
+ofile_sch_bar                                                   STop             7              25       139974
+ofile_sch                                                       STop             7             4.5       259961
+ofile_tch_bar                                                   STop             7            32.3      1935072
+ofile_tch                                                       STop             7            59.5      3758227
+ofile_tWch                                                      STop             7            11.2       493460
+ofile_tWch_bar                                                  STop             7            11.2       497658
+#ofile_TTbar                                                     tt_bar           210         225.196      6923750
+#ofile_TTbar_matchUp                                             tt_bar           210         228.308      5415010
+#ofile_TTbar_matchDn                                             tt_bar           210         214.600      5476728
+#ofile_TTbar_scaleUp                                             tt_bar           210         225.197      5009488
+#ofile_TTbar_scaleUp                                             tt_bar           210         228.0        5387181
+ofile_TTbar_Powheg                                              tt_bar           210         225.197      21675970
+ofile_BulkG_c0p2_M1600                                         BulkGraviton      1           0.0000277      45994
+ 

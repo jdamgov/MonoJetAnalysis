@@ -1,0 +1,26 @@
+#####################################################################################################################
+#  Sample Name 					            Reduced Name      Color     XSec (pb)    NumEntriesBefore
+######################################################################################################################
+RD_WmunuJets_DataAll_GoldenJSON_19p3invfb                      DATA             1               1            1
+RD_mu_ZpJ_CMSSW532                                             Z+Jets                     5            3503     30459503
+RD_mu_STopS_Tbar_CMSSW532                                      STop                       210            1.75       139974
+RD_mu_STopS_T_CMSSW532                                         STop                       210             3.79       259961
+RD_mu_STopT_Tbar_CMSSW532                                      STop                       210            30.7      1935072
+RD_mu_STopT_T_CMSSW532                                         STop                       210            56.4      3758227
+RD_mu_STopTW_Tbar_CMSSW532                                     STop                       210            11.2       493460
+RD_mu_STopTW_T_CMSSW532                                        STop                       210            11.2       497658
+RD_mu_TTbar_powheg_CMSSW532                                    tt_bar                     210         245.8     21675970
+#RD_mu_W1Jets_CMSSW532                                          W+Jets                     2            6601     23141598
+#RD_mu_W2Jets_CMSSW532                                          W+Jets                     2             2110    34044921
+#RD_mu_W3Jets_CMSSW532                                          W+Jets                     2             633     15539503
+#RD_mu_W4Jets_CMSSW532                                          W+Jets                     2             263     13382803
+RD_mu_WpJPt100_CMSSW532                                        W+Jets                     2           272.9      8955318
+#RD_mu_WpJPt100_herwig_CMSSW532                                 W+Jets                     2           272.9     13256090
+#RD_mu_WpJPt180_CMSSW532                                       W+Jets                     2            28.97      9739464
+RD_mu_WW_CMSSW532                                              WW                         7          54.838     10000431
+RD_mu_WZ_CMSSW532                                              WZ                         7         32.3161     10000283
+RD_mu_ZZ_CMSSW532                                              ZZ                         7           17.65      9799908
+RD_mu_HWWMH600_CMSSW532_private                                ggH              4         0.01469       197170
+RD_mu_VBFHWWMH600_CMSSW532_private                             qqH              6         0.00817       198900
+
+

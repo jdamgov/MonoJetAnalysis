@@ -1,0 +1,44 @@
+#####################################################
+########## Cut String For TTree Draw Method #########
+#####################################################
+
+## Efficiency test
+
+
+#l_pt > 0
+
+#l_pt>50
+
+#l_pt>50 && v_pt>200
+
+#l_pt>50 && v_pt>200 && pfMET>40 
+
+#l_pt>50 && v_pt>200 && pfMET>40 && ungroomed_jet_pt>200 && abs(l_eta)<2.1
+
+#l_pt>50 && v_pt>200 && pfMET>40 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && issignal
+
+#l_pt>50 && v_pt>200 && pfMET>40 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && issignal && nbjets_csvm_veto ==0
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && (jet_mass_pr>65 && jet_mass_pr<105)  && nbjets_csvm_veto == 0
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && (jet_mass_pr>70 && jet_mass_pr<100)  && nbjets_csvm_veto == 0
+
+
+###  side band cut
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && ((jet_mass_pr>40 && jet_mass_pr<65) || (jet_mass_pr>105 && jet_mass_pr<130)) && nbjets_csvm_veto == 0 && ( jet_tau2tau1 >= 0.5 && jet_tau2tau1 < 0.75 )
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && ((jet_mass_pr>40 && jet_mass_pr<65) || (jet_mass_pr>105 && jet_mass_pr<130)) && nbjets_csvm_veto == 0 && jet_tau2tau1 < 0.5 
+
+### Signal Region cut
+
+issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && (jet_mass_pr>65 && jet_mass_pr<105)  && nbjets_csvm_veto == 0  && ( jet_tau2tau1 >= 0.5 && jet_tau2tau1 < 0.75 )
+
+issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && (jet_mass_pr>65 && jet_mass_pr<105)  && nbjets_csvm_veto == 0  && jet_tau2tau1 < 0.5
+
+#issignal && v_pt>200 && pfMET>40 && l_pt>50 && ungroomed_jet_pt>200 && abs(l_eta)<2.1 && nbjets_csvm_veto == 0 && (jet_mass_pr>40 && jet_mass_pr<130) 
+
+## ttbar cut
+
+
+#pfMET> 40 && v_pt > 200 && l_pt>50  && abs(l_eta)<2.1 && ttb_ca8_ungroomed_pt > 200 && ( ttb_nak5_same_csvm > 0 || ttb_nak5_oppoveto_csvm > 0) && ( jet_mass_pr>=40 && jet_mass_pr<=130)

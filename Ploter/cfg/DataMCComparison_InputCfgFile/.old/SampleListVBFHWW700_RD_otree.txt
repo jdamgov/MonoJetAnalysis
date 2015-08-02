@@ -1,0 +1,30 @@
+#####################################################################################################################
+#  Sample Name 					            Reduced Name      Color     XSec (pb)    NumEntriesBefore
+######################################################################################################################
+ofile_data                                                      DATA             1               1             1
+#ofile_WJets_Pythia100                                          W+Jets           2           272.6       8955318
+#ofile_WJets_Herwig                                             W+Jets           2           272.6      13256090
+#ofile_WJets_Pythia180                                          W+Jets           2         28.9755       9739464
+ofile_W1Jets_Pythia                                             W+Jets           2            6601      23141598
+ofile_W2Jets_Pythia                                             W+Jets		 2            2110      34044921
+ofile_W3Jets_Pythia                                             W+Jets		 2             633      15539503
+ofile_W4Jets_Pythia                                             W+Jets		 2             263      13382803
+ofile_WW                                                        WW               4          54.838      10000431
+ofile_WZ                                                        WZ               4           33.21      10000283
+ofile_ZJets                                                     Z+Jets           5            3503      30459503
+ofile_ZZ                                                        ZZ               4           17.65       9799908
+ofile_sch_bar                                                   STop             7            1.75        139974
+ofile_sch                                                       STop             7            3.79        259961
+ofile_tch_bar                                                   STop             7            30.7       1935072
+ofile_tch                                                       STop             7            56.4       3758227
+ofile_tWch                                                      STop             7            11.2        493460
+ofile_tWch_bar                                                  STop             7            11.2        497658
+#ofile_TTbar                                                    tt_bar           210         245.8       6923750
+#ofile_TTbar_matchUp                                            tt_bar           210         228.30      5415010
+#ofile_TTbar_matchDn                                            tt_bar           210         214.60      5476728
+#ofile_TTbar_scaleUp                                            tt_bar           210         225.19      5009488
+#ofile_TTbar_scaleUp                                            tt_bar           210         228.0       5387181
+ofile_TTbar_Powheg                                              tt_bar           210         245.8      21675970
+ofile_ggH700                                                    ggHx700                        1         0.05813       197292
+ofile_vbfH700                                                   qqHx700                        12         0.01608       194830
+

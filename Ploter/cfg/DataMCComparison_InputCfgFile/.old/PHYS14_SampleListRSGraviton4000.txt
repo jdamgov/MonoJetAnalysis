@@ -1,0 +1,21 @@
+#####################################################################################################################
+#  Sample Name 					            Reduced Name      Color     XSec (pb)    NumEntriesBefore
+######################################################################################################################
+#WWTree_data                                                      DATA             1               1             1
+WWTree_WJets100                                             W+Jets           2            1817      5262265
+WWTree_WJets200                                             W+Jets           2            471.6      4936077
+WWTree_WJets400                                             W+Jets           2            55.61      4640594
+WWTree_WJets600                                             W+Jets           2            18.81      4581841
+WWTree_WW                                                       WW               4          0.29      19800
+#WWTree_WZ                                                        WZ               4           ?      ?
+#WWTree_ZJets                                                     Z+Jets           5            ?      ?
+#WWTree_ZZ                                                        ZZ               4           ?       ?
+WWTree_sch_bar                                                   STop             7            4.16        250000
+WWTree_sch                                                       STop             7            7.2        500000
+WWTree_tch_bar                                                   STop             7            80.97       1999800 
+WWTree_tch                                                       STop             7            136.05      3991000
+WWTree_tWch                                                      STop             7            35.6        986100
+WWTree_tWch_bar                                                  STop             7            35.6        971800
+#WWTree_TTbar_old                                                    tt_bar           210         424.5       2991609
+WWTree_TTbar							     tt_bar           210         831.76      25446993
+WWTree_RSGraviton4000                                                    RSGrav4000              1           0.0002739       28687
